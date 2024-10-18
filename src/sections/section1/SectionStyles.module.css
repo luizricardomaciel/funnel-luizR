@@ -1,0 +1,21 @@
+.container {
+  width: 100%;
+  max-width: 1246px;
+  padding: 0 15px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 120px;
+  padding-bottom: 56px;
+  border-bottom: 1px solid rgb(214, 12, 12);
+  border-bottom: 2px solid rgba(181, 181, 181, 0.5);
+}
+
+.leftArea {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 57.6rem;
+  gap: 20px;
+}

@@ -1,0 +1,24 @@
+.box {
+  width: 100%;
+  max-width: 58rem;
+  height: 58rem;
+  img {
+    border-radius: 16px;
+  }
+}
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #ff7509;
+  border-radius: 50px;
+  margin: 0 4px;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.swiper-pagination-bullet-active {
+  background: linear-gradient(269.77deg, #ff0022 9.29%, #ff7509 82.2%);
+  border-radius: 20px;
+  width: 24px;
+  opacity: 1;
+}

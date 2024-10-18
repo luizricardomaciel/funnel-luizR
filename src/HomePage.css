@@ -1,0 +1,75 @@
+h1 {
+  font-size: 5rem;
+  color: white;
+}
+h2 {
+  font-size: 3.6rem;
+  color: white;
+  font-weight: bold;
+}
+h3 {
+  font-size: 1.8rem;
+  color: white;
+  font-weight: 500;
+}
+
+p {
+  font-size: 1.8rem;
+  font-family: "Space Grotesk", serif;
+  color: #b5b5b5;
+}
+
+.btn-primary {
+  font-size: 1.8rem;
+
+  background: linear-gradient(269.77deg, #ff0022 0.29%, #ff7509 82.2%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 20.1rem;
+  padding-bottom: 1px;
+  height: 62px;
+
+  border: 1px solid #ff7509;
+  border-radius: 73px;
+
+  /* Adiciona opacidade à transição */
+  transition: background 0.3s ease, opacity 0.3s ease;
+
+  position: relative;
+  z-index: 1;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(269.77deg, #ff0022 0.29%, #ff7509 82.2%);
+    border-radius: inherit;
+    z-index: -1;
+    transition: opacity 0.3s ease;
+  }
+
+  &:hover {
+    background: transparent;
+  }
+
+  &:hover:before {
+    opacity: 0;
+  }
+
+  h3 {
+    transition: 0.3s;
+    z-index: 2;
+  }
+
+  &:hover h3 {
+    background: linear-gradient(to left, #ff0022 0.29%, #ff7509 82.2%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}

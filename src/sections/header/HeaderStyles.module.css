@@ -1,0 +1,57 @@
+header {
+  height: 8.8rem;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1246px;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 3;
+      left: 67px;
+      width: 3px;
+      height: 33px;
+      background: linear-gradient(to top, #ff0022 0.29%, #ff7509 82.2%);
+    }
+  }
+}
+
+ul {
+  display: flex;
+  gap: 2rem;
+
+  a {
+    font-family: "Space Grotesk", serif;
+    font-size: 1.5rem;
+    transition: 0.3s;
+
+    &:hover {
+      background: linear-gradient(to left, #ff0022 0.29%, #ff7509 82.2%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+  }
+}
+
+a {
+  color: white;
+  h1 {
+    font-size: 3rem;
+  }
+}
