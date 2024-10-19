@@ -16,54 +16,53 @@
   flex-direction: column;
   width: 100%;
   max-width: 51.7rem;
+}
 
-  .title {
-    h1 {
-      font-size: 120px;
-      margin-bottom: 5.6rem;
-    }
+.title {
+  h1 {
+    font-size: 120px;
+    margin-bottom: 5.6rem;
+  }
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 4.5rem;
+
+  p {
+    font-size: 1.6rem;
+    font-weight: normal;
   }
 
-  .info {
+  a {
     display: flex;
-    flex-direction: column;
-    gap: 4.5rem;
-
-    p {
-      font-size: 1.6rem;
-      font-weight: normal;
+    align-items: center;
+    gap: 10px;
+    transition: all 5.3s;
+    .img {
+      position: relative;
+    }
+    .whats {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 1;
+      transition: opacity 0.5s;
     }
 
-    a {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      transition: all 5.3s;
-      .img {
-        position: relative;
-      }
+    .whatsColor {
+      opacity: 0;
+      transition: opacity 0.5s;
+    }
+
+    &:hover {
       .whats {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        opacity: 1;
-        transition: opacity 0.5s;
-      }
-
-      .whatsColor {
         opacity: 0;
-        transition: opacity 0.5s;
       }
-
-      &:hover {
-        .whats {
-          opacity: 0;
-        }
-        .whatsColor {
-          opacity: 1;
-        }
+      .whatsColor {
+        opacity: 1;
       }
     }
   }
