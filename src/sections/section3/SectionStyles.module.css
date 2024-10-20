@@ -7,6 +7,10 @@
   height: 100vh;
 }
 
+section {
+  position: relative;
+}
+
 .boxImage {
   width: 100%;
   max-width: 52.7rem;
@@ -80,16 +84,6 @@
 @media (max-width: 1150px) {
   .left {
     max-width: 39.7rem;
-  }
-}
-@media (max-width: 997px) {
-  .right {
-    width: 100%;
-    max-width: 54rem;
-    position: absolute;
-    top: 119px;
-    right: 15px;
-    z-index: -1;
   }
 }
 @media (max-width: 678px) {

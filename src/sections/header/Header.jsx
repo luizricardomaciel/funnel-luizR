@@ -12,7 +12,12 @@ function Header() {
           <img src={logoName} alt="" />
         </a>
         <nav>
-          <ul>
+          <div className={styles.mobileMenu}>
+            <div className={styles.line1}></div>
+            <div className={styles.line2}></div>
+            <div className={styles.line3}></div>
+          </div>
+          <ul className={styles.navList}>
             <li>
               <a href="#">Como funciona</a>
             </li>

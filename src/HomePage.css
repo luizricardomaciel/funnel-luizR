@@ -20,8 +20,6 @@ p {
 }
 
 .btn-primary {
-  font-size: 1.8rem;
-
   background: linear-gradient(269.77deg, #ff0022 0.29%, #ff7509 82.2%);
   display: flex;
   align-items: center;
@@ -71,5 +69,11 @@ p {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn-primary {
+    height: 55px;
   }
 }

@@ -19,7 +19,7 @@ function Section1() {
             <h3>Contrate Agora</h3>
           </a>
         </div>
-        <div className="right-area">
+        <div className={style.rightArea}>
           <img src={cell} alt="programador alta performace" />
         </div>
       </div>

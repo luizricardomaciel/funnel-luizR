@@ -7,10 +7,10 @@ import Section3 from "./sections/section3/Section3";
 function App() {
   return (
     <>
-      {/* <Header />
+      <Header />
       <Section1 />
-      <Section2 /> */}
-      <Section3 />
+      <Section2 />
+      {/* <Section3 /> */}
     </>
   );
 }

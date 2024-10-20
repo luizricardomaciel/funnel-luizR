@@ -19,3 +19,34 @@
   max-width: 57.6rem;
   gap: 20px;
 }
+
+.rightArea {
+  margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .rightArea {
+    display: none;
+  }
+  .container {
+    justify-content: center;
+  }
+  .leftArea {
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    h1 {
+      text-align: center;
+      font-size: 3.9rem;
+    }
+    p {
+      text-align: center;
+      font-size: 1.6rem;
+    }
+  }
+  a {
+    h3 {
+      font-size: 16px;
+    }
+  }
+}
