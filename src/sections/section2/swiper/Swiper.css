@@ -22,3 +22,16 @@
   width: 24px;
   opacity: 1;
 }
+
+@media (max-width: 1050px) {
+  .box {
+    max-width: 50rem;
+    height: 50rem;
+  }
+}
+@media (max-width: 550px) {
+  .box {
+    max-width: 34.5rem;
+    height: 34.5rem;
+  }
+}
