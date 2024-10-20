@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./HeaderStyles.module.css";
 import logo from "../../assets/logo-icon.svg";
 import logoName from "../../assets/logo-name-icon.svg";
 
 function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+    if (menuOpen) {
+      document.body.classList.add("noScroll");
+    } else {
+      document.body.classList.remove("noScroll");
+    }
+  };
   return (
     <header>
       <div className={styles.container}>
@@ -12,12 +22,17 @@ function Header() {
           <img src={logoName} alt="" />
         </a>
         <nav>
-          <div className={styles.mobileMenu}>
+          <div className={styles.mobileMenu} onClick={toggleMenu}>
             <div className={styles.line1}></div>
             <div className={styles.line2}></div>
             <div className={styles.line3}></div>
           </div>
-          <ul className={styles.navList}>
+          <ul className={`${styles.navList} ${menuOpen ? styles.active : ""}`}>
+            <li className={styles.logoMobile}>
+              <h1>
+                Luiz <br /> Ricardo.
+              </h1>
+            </li>
             <li>
               <a href="#">Como funciona</a>
             </li>
@@ -26,6 +41,11 @@ function Header() {
             </li>
             <li>
               <a href="#">Fale comigo</a>
+            </li>
+            <li>
+              <a href="#" className={`btn-primary ${styles.actionMobile}`}>
+                <h3>Contratar agora</h3>
+              </a>
             </li>
           </ul>
         </nav>
