@@ -7,7 +7,7 @@ import Swiper from "./swiper/Slide";
 
 function Section2() {
   return (
-    <section>
+    <section id="section2">
       <div className={style.container}>
         <div className={style.text}>
           <h2>

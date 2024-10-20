@@ -52,6 +52,10 @@ ul {
     display: none;
   }
 
+  .actionMobile {
+    display: none;
+  }
+
   a {
     font-family: "Space Grotesk", serif;
     font-size: 1.5rem;
@@ -97,6 +101,7 @@ a {
       }
 
       .actionMobile {
+        display: flex;
         max-width: 100%;
         margin-top: 30px;
       }

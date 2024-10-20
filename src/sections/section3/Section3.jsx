@@ -6,7 +6,7 @@ import criador from "../../assets/foto pro 1.png";
 
 function Section3() {
   return (
-    <section>
+    <section id="section3">
       <div className={styles.boxImage}>
         <img
           src={criador}

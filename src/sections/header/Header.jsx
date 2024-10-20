@@ -3,6 +3,12 @@ import styles from "./HeaderStyles.module.css";
 import logo from "../../assets/logo-icon.svg";
 import logoName from "../../assets/logo-name-icon.svg";
 
+const scrollToSection = (id) => {
+  document
+    .getElementById(id)
+    .scrollIntoView({ block: "end", behavior: "smooth" });
+};
+
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -14,6 +20,7 @@ function Header() {
       document.body.classList.remove("noScroll");
     }
   };
+
   return (
     <header>
       <div className={styles.container}>
@@ -34,13 +41,17 @@ function Header() {
               </h1>
             </li>
             <li>
-              <a href="#">Como funciona</a>
+              <a href="#" onClick={() => scrollToSection("section2")}>
+                Como funciona
+              </a>
             </li>
             <li>
               <a href="#">Tire suas dúvidas</a>
             </li>
             <li>
-              <a href="#">Fale comigo</a>
+              <a href="#" onClick={() => scrollToSection("section3")}>
+                Fale comigo
+              </a>
             </li>
             <li>
               <a href="#" className={`btn-primary ${styles.actionMobile}`}>
