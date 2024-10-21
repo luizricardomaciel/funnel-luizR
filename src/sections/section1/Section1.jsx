@@ -2,6 +2,12 @@ import React from "react";
 import style from "./SectionStyles.module.css";
 import cell from "../../assets/Cell.png";
 
+const scrollToSection = (id) => {
+  document
+    .getElementById(id)
+    .scrollIntoView({ block: "start", behavior: "smooth" });
+};
+
 function Section1() {
   return (
     <section className={style.section01}>
@@ -15,7 +21,11 @@ function Section1() {
             desenvolvimento web para levar sua presença online ao próximo nível.
             Entre e contato agora e garanta o seu site exclusivo!
           </p>
-          <a href="#" className="btn-primary">
+          <a
+            href="#"
+            className="btn-primary"
+            onClick={() => scrollToSection("section4")}
+          >
             <h3>Contrate Agora</h3>
           </a>
         </div>

@@ -6,7 +6,7 @@ import logoName from "../../assets/logo-name-icon.svg";
 const scrollToSection = (id) => {
   document
     .getElementById(id)
-    .scrollIntoView({ block: "end", behavior: "smooth" });
+    .scrollIntoView({ block: "start", behavior: "smooth" });
 };
 
 function Header() {
