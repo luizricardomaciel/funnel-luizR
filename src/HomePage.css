@@ -73,6 +73,10 @@ p {
   }
 }
 
+.noScroll {
+  overflow: hidden;
+}
+
 @media (max-width: 768px) {
   .btn-primary {
     height: 55px;

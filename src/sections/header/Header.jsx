@@ -3,22 +3,22 @@ import styles from "./HeaderStyles.module.css";
 import logo from "../../assets/logo-icon.svg";
 import logoName from "../../assets/logo-name-icon.svg";
 
-const scrollToSection = (id) => {
-  document
-    .getElementById(id)
-    .scrollIntoView({ block: "start", behavior: "smooth" });
-};
-
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
-    if (menuOpen) {
+    if (!menuOpen) {
       document.body.classList.add("noScroll");
     } else {
       document.body.classList.remove("noScroll");
     }
+  };
+  const scrollToSection = (id) => {
+    document
+      .getElementById(id)
+      .scrollIntoView({ block: "start", behavior: "smooth" });
+    toggleMenu();
   };
 
   return (
