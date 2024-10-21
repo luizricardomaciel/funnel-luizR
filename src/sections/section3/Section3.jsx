@@ -17,7 +17,9 @@ function Section3() {
       <div className={styles.container}>
         <div className={styles.left}>
           <div className={styles.title}>
-            <h1>Luiz R.</h1>
+            <h1>
+              Luiz <br /> Ricardo.
+            </h1>
           </div>
           <div className={styles.info}>
             <p>

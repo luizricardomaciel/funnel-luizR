@@ -28,12 +28,25 @@ section {
   flex-direction: column;
   width: 100%;
   max-width: 51.7rem;
+  position: relative;
+  padding-left: 2.8rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 1rem;
+    top: 0.5rem;
+    height: 147px;
+    width: 2px;
+    background: linear-gradient(to top, #ff0022 0.29%, #ff7509 82.2%);
+  }
 }
 
 .title {
   h1 {
     font-size: 12rem;
     margin-bottom: 5.6rem;
+    line-height: 99px;
   }
 }
 .info {
@@ -117,6 +130,7 @@ section {
     h1 {
       font-size: 6.8rem;
       margin-bottom: 2.5rem;
+      line-height: 55px;
     }
   }
   .info {
@@ -133,6 +147,6 @@ section {
 }
 @media (max-width: 480px) {
   .container {
-    padding-top: 281px;
+    padding-top: 356px;
   }
 }
