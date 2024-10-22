@@ -15,10 +15,11 @@ function Header() {
     }
   };
   const scrollToSection = (id) => {
+    document.getElementById("js-menu").classList.remove("_active_ltlzc_251");
+    document.body.classList.remove("noScroll");
     document
       .getElementById(id)
       .scrollIntoView({ block: "start", behavior: "smooth" });
-    toggleMenu();
   };
 
   return (
@@ -34,14 +35,21 @@ function Header() {
             <div className={styles.line2}></div>
             <div className={styles.line3}></div>
           </div>
-          <ul className={`${styles.navList} ${menuOpen ? styles.active : ""}`}>
+          <ul
+            id="js-menu"
+            className={`${styles.navList} ${menuOpen ? styles.active : ""}`}
+          >
             <li className={styles.logoMobile}>
               <h1>
                 Luiz <br /> Ricardo.
               </h1>
             </li>
             <li>
-              <a href="#" onClick={() => scrollToSection("section2")}>
+              <a
+                href="#"
+                onClick={() => scrollToSection("section2")}
+                className={`${!menuOpen ? styles.active : ""}`}
+              >
                 Como funciona
               </a>
             </li>

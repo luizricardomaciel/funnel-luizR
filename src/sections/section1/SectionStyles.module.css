@@ -18,6 +18,10 @@
   width: 100%;
   max-width: 57.6rem;
   gap: 20px;
+
+  h1 {
+    text-align: start;
+  }
 }
 
 .rightArea {
