@@ -14,12 +14,13 @@ function Header() {
       document.body.classList.remove("noScroll");
     }
   };
+
   const scrollToSection = (id) => {
-    document.getElementById("js-menu").classList.remove("_active_ltlzc_251");
-    document.body.classList.remove("noScroll");
     document
       .getElementById(id)
       .scrollIntoView({ block: "start", behavior: "smooth" });
+    document.body.classList.remove("noScroll");
+    setMenuOpen(false);
   };
 
   return (
@@ -35,10 +36,7 @@ function Header() {
             <div className={styles.line2}></div>
             <div className={styles.line3}></div>
           </div>
-          <ul
-            id="js-menu"
-            className={`${styles.navList} ${menuOpen ? styles.active : ""}`}
-          >
+          <ul className={`${styles.navList} ${menuOpen ? styles.active : ""}`}>
             <li className={styles.logoMobile}>
               <h1>
                 Luiz <br /> Ricardo.
@@ -47,8 +45,8 @@ function Header() {
             <li>
               <a
                 href="#"
+                className={` ${menuOpen ? "" : ""}`}
                 onClick={() => scrollToSection("section2")}
-                className={`${!menuOpen ? styles.active : ""}`}
               >
                 Como funciona
               </a>
