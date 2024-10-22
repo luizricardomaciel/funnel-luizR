@@ -47,6 +47,7 @@ section {
     font-size: 12rem;
     margin-bottom: 5.6rem;
     line-height: 99px;
+    text-align: start;
   }
 }
 .info {

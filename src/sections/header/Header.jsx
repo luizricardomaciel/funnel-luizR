@@ -11,7 +11,6 @@ function Header() {
     if (!menuOpen) {
       document.body.classList.add("noScroll");
     } else {
-      document.body.classList.remove("noScroll");
     }
   };
 

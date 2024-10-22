@@ -29,6 +29,10 @@
 }
 
 @media (max-width: 768px) {
+  .container {
+    padding-top: 6.2rem;
+    padding-bottom: 3.6rem;
+  }
   .rightArea {
     display: none;
   }

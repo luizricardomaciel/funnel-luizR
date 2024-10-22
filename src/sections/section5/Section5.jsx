@@ -11,27 +11,30 @@ function Section5() {
         <h2>Veja alguns projetos que desenvolvi</h2>
         <div className={styles.content}>
           <div className={styles.box}>
-            <a href="#">
+            <a href="https://home-page-banco-neon.vercel.app/" target="_blank">
               <img src={neon} alt="home page banco neon" />
             </a>
             <h3>
-              projeto <br /> NEON
+              Projeto <br /> NEON
             </h3>
           </div>
           <div className={styles.box}>
-            <a href="#">
+            <a href="https://project-blizzard.vercel.app/" target="_blank">
               <img src={blizzard} alt="home page banco neon" />
             </a>
             <h3>
-              projeto <br /> Blizzard
+              Projeto <br /> Blizzard
             </h3>
           </div>
           <div className={styles.box}>
-            <a href="#">
+            <a
+              href="https://landing-page-wire-frame.vercel.app/"
+              target="_blank"
+            >
               <img src={wireframe} alt="home page banco neon" />
             </a>
             <h3>
-              projeto <br /> wireframe
+              Projeto <br /> wireframe
             </h3>
           </div>
         </div>
