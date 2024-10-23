@@ -55,7 +55,7 @@ h1 {
       width: 150px;
       height: 135%;
       background: linear-gradient(to top, #ff0022 0.29%, #ff7509 69.2%);
-      animation: animate 5s linear infinite;
+      animation: animate 8s linear infinite;
       box-shadow: 0px -20px 20px 5px #ff7509, 0px 20px 20px 5px #ff0000;
     }
   }
