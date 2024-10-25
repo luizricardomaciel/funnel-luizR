@@ -1,4 +1,5 @@
 import "./HomePage.css";
+import Footer from "./sections/footer/Footer";
 import Header from "./sections/header/Header";
 import Section1 from "./sections/section1/Section1";
 import Section2 from "./sections/section2/Section2";
@@ -17,6 +18,7 @@ function App() {
       <Section4 />
       <Section5 />
       <Section6 />
+      <Footer />
     </>
   );
 }

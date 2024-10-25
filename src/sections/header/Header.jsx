@@ -27,8 +27,9 @@ function Header() {
     <header>
       <div className={styles.container}>
         <a href="#" className={styles.logo}>
-          <img src={logo} alt="" />
-          <img src={logoName} alt="" />
+          <h2>
+            Luiz <br /> Ricardo.
+          </h2>
         </a>
         <nav>
           <div className={styles.mobileMenu} onClick={toggleMenu}>

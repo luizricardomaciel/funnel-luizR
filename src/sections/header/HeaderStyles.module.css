@@ -12,18 +12,18 @@
   position: relative;
 
   .logo {
-    display: flex;
-    align-items: center;
-    gap: 30px;
+    display: inline-block;
     position: relative;
-
+    h2 {
+      line-height: 29px;
+    }
     &::before {
       content: "";
       position: absolute;
-      top: 3;
-      left: 67px;
-      width: 3px;
-      height: 33px;
+      left: -1rem;
+      top: 0.5rem;
+      height: 63px;
+      width: 2px;
       background: linear-gradient(to top, #ff0022 0.29%, #ff7509 82.2%);
     }
   }
