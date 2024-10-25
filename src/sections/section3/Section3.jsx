@@ -23,14 +23,20 @@ function Section3() {
           </div>
           <div className={styles.info}>
             <p>
-              Meu nome é Thiago Finch e sou internet marketer e Nômade Digital
-              desde 2013. Descobri estratégias que me fizeram milionário em
-              2016, aos 21 anos, e de lá pra cá tenho aumentado cada vez mais
-              meu patrimônio, ano a ano.
+              Olá, sou Luiz Ricardo, Programador WEB especializado em criar
+              experiências digitais únicas para impulsionar o seu negócio!
+              Diferente de muitos designers que usam modelos prontos, eu
+              desenvolvo cada site do zero, 100% personalizado para refletir a
+              identidade e os objetivos da sua marca..
             </p>
             <p>
-              Clique abaixo e garanta o seu acesso por um ano a um dos melhores
-              Close Friends (stories de melhores amigos) do Brasil.
+              <strong>Por que escolher o meu serviço?</strong> Porque você terá
+              um site que se destaca da concorrência, totalmente otimizado e
+              responsivo, feito sob medida para aumentar suas vendas online!{" "}
+              <br />
+              <strong>Vagas Limitadas: Apenas 2 Projetos Mensais!</strong>{" "}
+              Garanta seu lugar agora e invista em uma presença online de alto
+              impacto que realmente converte!
             </p>
             <a href="" className="btn-primary">
               <div className={styles.img}>
