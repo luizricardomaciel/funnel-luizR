@@ -12,7 +12,7 @@ function Section6() {
   };
 
   return (
-    <section className={styles.section6}>
+    <section id="section6" className={styles.section6}>
       <div className={styles.container}>
         <div className={styles.top}>
           <div className={styles.left}>

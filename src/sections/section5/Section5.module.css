@@ -3,10 +3,10 @@
   max-width: 1246px;
   padding: 0 15px;
   margin: 0 auto;
-  margin-top: 210px;
+  padding-top: 210px;
   padding-bottom: 210px;
 
-  h1 {
+  h2 {
     margin: 0 auto;
     text-align: center;
   }
@@ -73,10 +73,12 @@
 
 @media (max-width: 900px) {
   .container {
+    padding-top: 7rem;
+
     padding-bottom: 36px;
-  }
-  h2 {
-    font-size: 3.2rem;
+    h2 {
+      font-size: 3.2rem;
+    }
   }
   .content {
     justify-content: center;
@@ -87,7 +89,7 @@
 
 @media (max-width: 768px) {
   .container {
-    margin-top: 7rem;
+    padding-bottom: 8rem;
   }
   .content {
     margin-top: 5.5rem;
@@ -96,7 +98,8 @@
 
 @media (max-width: 550px) {
   .container {
-    margin-top: 4.1rem;
+    padding-top: 4.1rem;
+    padding-bottom: 3.6rem;
   }
   .content {
     margin-top: 3.5rem;

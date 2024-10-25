@@ -6,7 +6,7 @@ import wireframe from "../../assets/wireframe-project.png";
 
 function Section5() {
   return (
-    <section>
+    <section id="section5">
       <div className={styles.container}>
         <h2>Veja alguns projetos que desenvolvi</h2>
         <div className={styles.content}>

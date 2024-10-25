@@ -2,6 +2,13 @@ import React from "react";
 import styles from "./Footer.module.css";
 
 function Footer() {
+  const scrollToSection = (id) => {
+    event.preventDefault();
+    document
+      .getElementById(id)
+      .scrollIntoView({ block: "start", behavior: "smooth" });
+  };
+
   return (
     <section>
       <div className={styles.container}>
@@ -16,19 +23,29 @@ function Footer() {
           <nav>
             <ul>
               <li>
-                <a href="">Início</a>
+                <a href="" onClick={() => scrollToSection("header")}>
+                  Início
+                </a>
               </li>
               <li>
-                <a href="">Como funciona</a>
+                <a href="" onClick={() => scrollToSection("section2")}>
+                  Como funciona
+                </a>
               </li>
               <li>
-                <a href="">Projetos</a>
+                <a href="" onClick={() => scrollToSection("section5")}>
+                  Projetos
+                </a>
               </li>
               <li>
-                <a href="">Quem sou eu</a>
+                <a href="" onClick={() => scrollToSection("section3")}>
+                  Quem sou eu
+                </a>
               </li>
               <li>
-                <a href="">Contrate agora</a>
+                <a href="" onClick={() => scrollToSection("section4")}>
+                  Contrate agora
+                </a>
               </li>
             </ul>
           </nav>

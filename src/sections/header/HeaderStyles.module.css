@@ -151,3 +151,11 @@ a {
     display: block;
   }
 }
+
+@media (max-width: 550px) {
+  .container {
+    .logo {
+      margin-left: 12px;
+    }
+  }
+}

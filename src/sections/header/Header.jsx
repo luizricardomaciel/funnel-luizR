@@ -16,6 +16,7 @@ function Header() {
   };
 
   const scrollToSection = (id) => {
+    event.preventDefault();
     document
       .getElementById(id)
       .scrollIntoView({ block: "start", behavior: "smooth" });
@@ -24,7 +25,7 @@ function Header() {
   };
 
   return (
-    <header>
+    <header id="header">
       <div className={styles.container}>
         <a href="#" className={styles.logo}>
           <h2>
@@ -45,7 +46,7 @@ function Header() {
             </li>
             <li>
               <a
-                href="#"
+                href=""
                 className={` ${menuOpen ? "" : ""}`}
                 onClick={() => scrollToSection("section2")}
               >
@@ -53,15 +54,17 @@ function Header() {
               </a>
             </li>
             <li>
-              <a href="#">Tire suas dúvidas</a>
+              <a href="" onClick={() => scrollToSection("section6")}>
+                Tire suas dúvidas
+              </a>
             </li>
             <li>
-              <a href="#" onClick={() => scrollToSection("section3")}>
+              <a href="" onClick={() => scrollToSection("section3")}>
                 Fale comigo
               </a>
             </li>
             <li>
-              <a href="#" className={`btn-primary ${styles.actionMobile}`}>
+              <a href="" className={`btn-primary ${styles.actionMobile}`}>
                 <h3>Contratar agora</h3>
               </a>
             </li>
