@@ -6,6 +6,13 @@ import monitor from "../../assets/monitor-icon.svg";
 import Swiper from "./swiper/Slide";
 
 function Section2() {
+  const scrollToSection = (id) => {
+    event.preventDefault();
+    document
+      .getElementById(id)
+      .scrollIntoView({ block: "start", behavior: "smooth" });
+  };
+
   return (
     <section id="section2">
       <div className={style.container}>
@@ -17,7 +24,11 @@ function Section2() {
         <div className={style.bottom}>
           <div className={style.leftArea}>
             <Swiper />
-            <a href="#" className="btn-primary">
+            <a
+              href=""
+              onClick={() => scrollToSection("section5")}
+              className="btn-primary"
+            >
               <h3>Ver projetos</h3>
             </a>
           </div>
