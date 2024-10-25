@@ -8,9 +8,6 @@
   margin: 0 auto;
   padding-top: 120px;
   padding-bottom: 120px;
-
-  display: flex;
-  justify-content: space-between;
 }
 
 .left {
@@ -41,6 +38,11 @@
     margin-top: 1rem;
     letter-spacing: 1px;
   }
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
 }
 
 .right {
@@ -98,6 +100,50 @@
   }
 }
 
+.bot {
+  margin-top: 12rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .title {
+    font-weight: 600;
+    font-size: 3.2rem;
+    line-height: 120%;
+
+    color: #000000;
+  }
+
+  p {
+    margin-top: 4.2rem;
+    width: 100%;
+    max-width: 45.5rem;
+
+    font-family: "Space Grotesk";
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 120%;
+    text-align: center;
+
+    color: #000000;
+  }
+  a {
+    margin-top: 7.2rem;
+
+    gap: 10px;
+    .whats {
+      width: 100%;
+      height: 100%;
+      opacity: 1;
+    }
+
+    &:hover {
+    }
+  }
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -122,8 +168,19 @@
   .container {
     padding-top: 4rem;
     padding-bottom: 4rem;
-
+  }
+  .top {
     flex-direction: column;
+  }
+  .bot {
+    margin-top: 4rem;
+
+    p {
+      margin-top: 3.6rem;
+    }
+    a {
+      margin-top: 3.6rem;
+    }
   }
   .left {
     h2 {

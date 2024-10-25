@@ -62,10 +62,8 @@ section {
   }
 
   a {
-    display: flex;
-    align-items: center;
     gap: 10px;
-    transition: all 5.3s;
+    transition: all 0.3s;
     .img {
       position: relative;
     }

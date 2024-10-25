@@ -73,6 +73,36 @@ p {
   }
 }
 
+.btn-primary-white {
+  background: linear-gradient(269.77deg, #ff0022 0.29%, #ff7509 82.2%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 20.1rem;
+  padding-bottom: 1px;
+  height: 62px;
+
+  border: 1px solid #ff7509;
+  border-radius: 73px;
+
+  position: relative;
+  z-index: 1;
+
+  /* transition: transform 0.3s; */
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4); /* Sombra realista */
+  transition: all 0.3s ease; /* Transição suave */
+  h3 {
+    font-weight: 900;
+  }
+
+  &:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4); /* Efeito de levantamento */
+    transform: translateY(-4px); /* Levantar botão ao passar o mouse */
+  }
+}
+
 .noScroll {
   overflow: hidden;
 }
