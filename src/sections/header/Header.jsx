@@ -33,7 +33,10 @@ function Header() {
           </h2>
         </a>
         <nav>
-          <div className={styles.mobileMenu} onClick={toggleMenu}>
+          <div
+            className={`${styles.mobileMenu} ${menuOpen ? styles.active : ""}`}
+            onClick={toggleMenu}
+          >
             <div className={styles.line1}></div>
             <div className={styles.line2}></div>
             <div className={styles.line3}></div>
