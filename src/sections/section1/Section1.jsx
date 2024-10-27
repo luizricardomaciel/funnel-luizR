@@ -19,7 +19,7 @@ function Section1() {
           <p>
             Aproveite esta oportunidade única e contrate meus serviços de
             desenvolvimento web para levar sua presença online ao próximo nível.
-            Entre e contato agora e garanta o seu site exclusivo!
+            Entre em contato agora e garanta o seu site exclusivo!
           </p>
           <a
             href="#"
