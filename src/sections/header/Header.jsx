@@ -67,7 +67,11 @@ function Header() {
               </a>
             </li>
             <li>
-              <a href="" className={`btn-primary ${styles.actionMobile}`}>
+              <a
+                href=""
+                onClick={() => scrollToSection("section4")}
+                className={`btn-primary ${styles.actionMobile}`}
+              >
                 <h3>Contratar agora</h3>
               </a>
             </li>

@@ -160,6 +160,7 @@
     h2 {
       width: 100%;
       max-width: 189px;
+      line-height: 31px;
     }
   }
 }
