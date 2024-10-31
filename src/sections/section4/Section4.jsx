@@ -12,9 +12,9 @@ function Section4() {
               <p>Manutenção</p>
             </div>
             <div className={styles.bot}>
-              <p>Solução ideal para quem ja tem um site</p>
+              <p>para quem já tem um site</p>
               <div className={styles.value}>
-                <h3>12x R$36,94</h3>
+                <h3>12x R$56,94</h3>
                 <p>à vista R$597,00</p>
               </div>
               <a href="#" className="btn-primary">
@@ -24,13 +24,13 @@ function Section4() {
           </div>
           <div className={styles.card}>
             <div className={`${styles.title} ${styles.titleClick}`}>
-              <p>Manutenção</p>
+              <p>Site PRO</p>
             </div>
             <div className={styles.bot}>
-              <p>Solução ideal para quem ja tem um site</p>
+              <p>Solução ideal para alavancar seu negócio</p>
               <div className={styles.value}>
-                <h3>12x R$36,94</h3>
-                <p>à vista R$597,00</p>
+                <h3>R$1.197,00</h3>
+                <p>à vista R$1088,00</p>
               </div>
               <a href="#" className="btn-primary">
                 <h3>Contrate Agora</h3>
@@ -39,13 +39,13 @@ function Section4() {
           </div>
           <div className={styles.card}>
             <div className={styles.title}>
-              <p>Manutenção</p>
+              <p>Site institucional</p>
             </div>
             <div className={styles.bot}>
-              <p>Solução ideal para quem ja tem um site</p>
+              <p>A Solução Completa para Impulsionar sua Presença Online</p>
               <div className={styles.value}>
-                <h3>12x R$36,94</h3>
-                <p>à vista R$597,00</p>
+                <h3>R$2.997,00</h3>
+                <p>à vista R$2.847,15</p>
               </div>
               <a href="#" className="btn-primary">
                 <h3>Contrate Agora</h3>

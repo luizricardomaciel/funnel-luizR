@@ -69,8 +69,8 @@ function Section6() {
                   e precisam fazer pequenas alterações. <br />
                   <strong>Site Pro</strong> é para aqueles que desejam ter um
                   site profissional. <br />
-                  <strong>Site Completo</strong> é um site com várias páginas,
-                  perfeito para quem precisa de diferentes seções e
+                  <strong>Site institucional</strong> é um site com várias
+                  páginas, perfeito para quem precisa de diferentes seções e
                   redirecionamentos, ideal para criar funis de vendas.
                 </p>
               )}
@@ -94,7 +94,7 @@ function Section6() {
                   <strong>Site Pro</strong> é para você. Mas se você precisa de
                   um site que leva a outras páginas e permite um esquema de
                   vendas avançadas, como para marketing digital, o{" "}
-                  <strong>Site Completo</strong> é a escolha ideal.
+                  <strong>Site institucional</strong> é a escolha ideal.
                 </p>
               )}
             </div>
