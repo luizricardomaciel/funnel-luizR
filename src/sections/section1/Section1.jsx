@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./SectionStyles.module.css";
 import cell from "../../assets/celular-funnil 1.png";
-import AnimatedElement from "../AnimatedElement";
+// import AnimatedElement from "../AnimatedElement";
 
 const scrollToSection = (id) => {
   document
@@ -12,9 +12,9 @@ const scrollToSection = (id) => {
 function Section1() {
   return (
     <section className={style.section01}>
-      <AnimatedElement />
+      {/* <AnimatedElement /> */}
       <div className={style.container}>
-        <div className={style.leftArea} data-aos="fade-right">
+        <div className={style.leftArea}>
           <h1>
             Transforme o seu negócio com um site profissional de alta qualidade!
           </h1>
@@ -32,11 +32,7 @@ function Section1() {
           </a>
         </div>
         <div className={style.rightArea}>
-          <img
-            src={cell}
-            alt="programador alta performace"
-            data-aos="fade-up"
-          />
+          <img src={cell} alt="programador alta performace" />
         </div>
       </div>
     </section>
