@@ -25,6 +25,10 @@
   gap: 20px;
 }
 
+.animate {
+  width: 100%;
+  max-width: 39.2rem;
+}
 .card {
   width: 100%;
   max-width: 39.2rem;

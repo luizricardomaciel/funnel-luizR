@@ -3,19 +3,21 @@ import styles from "./SectionStyles.module.css";
 import whats from "../../assets/whatsapp-icon.svg";
 import whatsColor from "../../assets/whatsColor-icon.svg";
 import criador from "../../assets/foto pro 1.png";
+import AnimatedElement from "../AnimatedElement";
 
 function Section3() {
   return (
     <section id="section3">
-      <div className={styles.boxImage}>
-        <img
-          src={criador}
-          alt="Foto do criador/programador do site"
-          title="foto do programador com sua noiva"
-        />
-      </div>
+      <AnimatedElement />
       <div className={styles.container}>
-        <div className={styles.left}>
+        <div className={styles.boxImage} data-aos="fade-left">
+          <img
+            src={criador}
+            alt="Foto do criador/programador do site"
+            title="foto do programador com sua noiva"
+          />
+        </div>
+        <div className={styles.left} data-aos="fade-up">
           <div className={styles.title}>
             <h1>
               Luiz <br /> Ricardo.
