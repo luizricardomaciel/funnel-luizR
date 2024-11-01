@@ -18,7 +18,7 @@ function Section2() {
     <section id="section2">
       <AnimatedElement />
       <div className={style.container}>
-        <div className={style.text} data-aos="fade-left">
+        <div className={style.text} data-aos="fade-right">
           <h2>
             O que faz com que meus sites se destaquem e sejam de outro nível?
           </h2>
@@ -34,7 +34,7 @@ function Section2() {
               <h3>Ver projetos</h3>
             </a>
           </div>
-          <div className={style.rightArea} data-aos="fade-down">
+          <div className={style.rightArea} data-aos="fade-left">
             <ul>
               <li>
                 <div className={style.textTop}>
