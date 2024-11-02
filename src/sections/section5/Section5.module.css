@@ -5,6 +5,7 @@
   margin: 0 auto;
   padding-top: 210px;
   padding-bottom: 210px;
+  overflow-x: hidden;
 
   h2 {
     margin: 0 auto;

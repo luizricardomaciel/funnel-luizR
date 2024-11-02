@@ -4,8 +4,12 @@
   padding: 0 15px;
   margin: 0 auto;
   padding-top: 210px;
-  height: 100vh;
+  height: auto;
+  min-height: 100vh;
   position: relative;
+}
+section {
+  overflow: hidden;
 }
 
 .boxImage {
@@ -25,8 +29,8 @@
   flex-direction: column;
   width: 100%;
   max-width: 51.7rem;
-  position: relative;
   padding-left: 2.8rem;
+  position: relative;
 
   &::before {
     content: "";

@@ -4,7 +4,7 @@ import engrenagem from "../../assets/engrenagem-icon.svg";
 import graphic from "../../assets/grafico-icon.svg";
 import monitor from "../../assets/monitor-icon.svg";
 import Swiper from "./swiper/Slide";
-// import AnimatedElement from "../AnimatedElement";
+import AnimatedElement from "../AnimatedElement";
 
 function Section2() {
   const scrollToSection = (id) => {
@@ -16,15 +16,15 @@ function Section2() {
 
   return (
     <section id="section2">
-      {/* <AnimatedElement /> */}
+      <AnimatedElement />
       <div className={style.container}>
-        <div className={style.text}>
+        <div className={style.text} data-aos="fade-right">
           <h2>
             O que faz com que meus sites se destaquem e sejam de outro nível?
           </h2>
         </div>
         <div className={style.bottom}>
-          <div className={style.leftArea}>
+          <div className={style.leftArea} data-aos="fade-up">
             <Swiper />
             <a
               href=""
@@ -34,7 +34,7 @@ function Section2() {
               <h3>Ver projetos</h3>
             </a>
           </div>
-          <div className={style.rightArea}>
+          <div className={style.rightArea} data-aos="fade-left">
             <ul>
               <li>
                 <div className={style.textTop}>

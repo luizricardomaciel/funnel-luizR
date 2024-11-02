@@ -4,7 +4,7 @@ import "aos/dist/aos.css";
 
 const AnimatedElement = ({ animation }) => {
   useEffect(() => {
-    AOS.init({ once: true, duration: 2000, offset: 350 });
+    AOS.init({ once: true, duration: 2000, offset: 250 });
   }, []);
 };
 

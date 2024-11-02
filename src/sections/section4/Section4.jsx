@@ -1,17 +1,17 @@
 import React from "react";
 import styles from "./Section4.module.css";
-// import AnimatedElement from "../AnimatedElement";
+import AnimatedElement from "../AnimatedElement";
 
 function Section4() {
   return (
     <section id="section4">
-      {/* <AnimatedElement /> */}
+      <AnimatedElement />
       <div className={styles.container}>
-        <h2 data-aos="fade-right">
+        <h2 data-aos="fade-left">
           Escolha o Plano Perfeito para o Sucesso do Seu Site
         </h2>
         <div className={styles.content}>
-          <div className={styles.animate}>
+          <div className={styles.animate} data-aos="fade-up">
             <div className={styles.card}>
               <div className={styles.title}>
                 <p>Manutenção</p>
@@ -28,7 +28,7 @@ function Section4() {
               </div>
             </div>
           </div>
-          <div className={styles.animate}>
+          <div className={styles.animate} data-aos="fade-down">
             <div className={styles.card}>
               <div className={`${styles.title} ${styles.titleClick}`}>
                 <p>Site PRO</p>
@@ -45,7 +45,7 @@ function Section4() {
               </div>
             </div>
           </div>
-          <div className={styles.animate}>
+          <div className={styles.animate} data-aos="fade-up">
             <div className={styles.card}>
               <div className={styles.title}>
                 <p>Site institucional</p>

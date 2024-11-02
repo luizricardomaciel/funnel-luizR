@@ -5,6 +5,8 @@
   margin: 0 auto;
   padding-top: 210px;
   padding-bottom: 36px;
+  position: relative;
+  overflow: hidden;
 
   h2 {
     width: 100%;
@@ -126,6 +128,9 @@
 
 @media (max-width: 768px) {
   .container {
-    padding-top: 1.6rem;
+    padding-top: 11rem;
+  }
+  .content {
+    margin-top: 3.6rem;
   }
 }
