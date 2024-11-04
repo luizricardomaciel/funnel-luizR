@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import styles from "./HeaderStyles.module.css";
-import logo from "../../assets/logo-icon.svg";
-import logoName from "../../assets/logo-name-icon.svg";
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);

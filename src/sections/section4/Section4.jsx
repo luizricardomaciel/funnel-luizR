@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Section4.module.css";
 import AnimatedElement from "../AnimatedElement";
 
+import Form from "./Form/Form";
+
 function Section4() {
+  const [openForm, setForm] = useState(false);
+
   return (
     <section id="section4">
       <AnimatedElement />
@@ -22,9 +26,9 @@ function Section4() {
                   <h3>12x R$56,94</h3>
                   <p>à vista R$597,00</p>
                 </div>
-                <a href="#" className="btn-primary">
+                <button className="btn-primary" onClick={() => setForm(true)}>
                   <h3>Contrate Agora</h3>
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -39,9 +43,9 @@ function Section4() {
                   <h3>R$1.197,00</h3>
                   <p>à vista R$1088,00</p>
                 </div>
-                <a href="#" className="btn-primary">
+                <button className="btn-primary" onClick={() => setForm(true)}>
                   <h3>Contrate Agora</h3>
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -56,14 +60,15 @@ function Section4() {
                   <h3>R$2.997,00</h3>
                   <p>à vista R$2.847,15</p>
                 </div>
-                <a href="#" className="btn-primary">
+                <button className="btn-primary" onClick={() => setForm(true)}>
                   <h3>Contrate Agora</h3>
-                </a>
+                </button>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <Form show={openForm} onClose={() => setForm(false)} />
     </section>
   );
 }

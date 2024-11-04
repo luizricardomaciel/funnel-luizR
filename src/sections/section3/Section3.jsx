@@ -40,7 +40,11 @@ function Section3() {
               Garanta seu lugar agora e invista em uma presença online de alto
               impacto que realmente converte!
             </p>
-            <a href="" className="btn-primary">
+            <a
+              href="https://wa.me/message/MSNEX7SHDTARK1"
+              target="_blank"
+              className="btn-primary"
+            >
               <div className={styles.img}>
                 <img
                   src={whats}
