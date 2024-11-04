@@ -65,7 +65,7 @@ function Form({ show, onClose }) {
           <input
             type="hidden"
             name="redirect"
-            value="https://yourwebsite.com/thanks.html"
+            value="http://localhost:5173/obrigado"
           ></input>
         </form>
       </div>

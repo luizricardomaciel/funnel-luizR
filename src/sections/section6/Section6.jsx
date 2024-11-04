@@ -130,7 +130,10 @@ function Section6() {
             Tem alguma dúvida ou precisa de ajuda com sua compra? Entre em
             contato comigo agora e resolva todas as suas questões rapidamente!
           </p>
-          <a href="" className="btn-primary-white">
+          <a
+            href="https://wa.me/message/MSNEX7SHDTARK1"
+            className="btn-primary-white"
+          >
             <div className={styles.img}>
               <img
                 src={whats}
