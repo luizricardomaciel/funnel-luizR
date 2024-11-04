@@ -26,9 +26,9 @@ function Section4() {
                   <h3>12x R$99,70</h3>
                   <p>à vista R$997,00</p>
                 </div>
-                <a className="btn-primary" onClick={() => setForm(true)}>
+                <button className="btn-primary" onClick={() => setForm(true)}>
                   <h3>Contrate Agora</h3>
-                </a>
+                </button>
               </div>
             </div>
           </div>
