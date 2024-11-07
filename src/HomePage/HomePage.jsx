@@ -36,7 +36,10 @@ function App() {
           property="og:description"
           content="Web designer especializado em sites modernos e funcionais. Aumente sua visibilidade online, conquiste mais clientes e transforme seu negócio. Clique aqui e descubra mais!"
         />{" "}
-        <meta property="og:image" content="URL_COMPLETA_PARA_A_IMAGEM" />{" "}
+        <meta
+          property="og:image"
+          content="../../Web Designer, Programador, Confiança e Credibilidade, Tons Azuis.png"
+        />{" "}
         {/* Twitter */}{" "}
         <meta property="twitter:card" content="summary_large_image" />{" "}
         <meta property="twitter:url" content="https://luizricardodev.com.br/" />{" "}
@@ -48,7 +51,10 @@ function App() {
           property="twitter:description"
           content="Web designer especializado em sites modernos e funcionais. Aumente sua visibilidade online, conquiste mais clientes e transforme seu negócio. Clique aqui e descubra mais!"
         />{" "}
-        <meta property="twitter:image" content="URL_COMPLETA_PARA_A_IMAGEM" />{" "}
+        <meta
+          property="twitter:image"
+          content="../../Web Designer, Programador, Confiança e Credibilidade, Tons Azuis.png"
+        />{" "}
       </Helmet>
       <Header />
       <Section1 />
