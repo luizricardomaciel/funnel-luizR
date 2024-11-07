@@ -7,55 +7,10 @@ import Section3 from "../sections/section3/Section3";
 import Section4 from "../sections/section4/Section4";
 import Section5 from "../sections/section5/Section5";
 import Section6 from "../sections/section6/Section6";
-import { Helmet } from "react-helmet";
 
 function App() {
   return (
     <>
-      <Helmet>
-        {" "}
-        <title>
-          Transforme Seu Negócio com Sites de Alta Performance!
-        </title>{" "}
-        <meta
-          name="title"
-          content="Transforme Seu Negócio com Sites de Alta Performance!"
-        />{" "}
-        <meta
-          name="description"
-          content="Web designer especializado em sites modernos e funcionais. Aumente sua visibilidade online, conquiste mais clientes e transforme seu negócio. Clique aqui e descubra mais!"
-        />{" "}
-        {/* Open Graph / Facebook */}{" "}
-        <meta property="og:type" content="website" />{" "}
-        <meta property="og:url" content="https://luizricardodev.com.br/" />{" "}
-        <meta
-          property="og:title"
-          content="Transforme Seu Negócio com Sites de Alta Performance!"
-        />{" "}
-        <meta
-          property="og:description"
-          content="Web designer especializado em sites modernos e funcionais. Aumente sua visibilidade online, conquiste mais clientes e transforme seu negócio. Clique aqui e descubra mais!"
-        />{" "}
-        <meta
-          property="og:image"
-          content="../../Web Designer, Programador, Confiança e Credibilidade, Tons Azuis.png"
-        />{" "}
-        {/* Twitter */}{" "}
-        <meta property="twitter:card" content="summary_large_image" />{" "}
-        <meta property="twitter:url" content="https://luizricardodev.com.br/" />{" "}
-        <meta
-          property="twitter:title"
-          content="Transforme Seu Negócio com Sites de Alta Performance!"
-        />{" "}
-        <meta
-          property="twitter:description"
-          content="Web designer especializado em sites modernos e funcionais. Aumente sua visibilidade online, conquiste mais clientes e transforme seu negócio. Clique aqui e descubra mais!"
-        />{" "}
-        <meta
-          property="twitter:image"
-          content="../../Web Designer, Programador, Confiança e Credibilidade, Tons Azuis.png"
-        />{" "}
-      </Helmet>
       <Header />
       <Section1 />
       <Section2 />

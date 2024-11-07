@@ -2,21 +2,10 @@ import React from "react";
 import whats from "../assets/whatsapp-icon.svg";
 import whatsColor from "../assets/whatsColor-icon.svg";
 import styles from "./Obrigado.module.css";
-import { Helmet } from "react-helmet";
 
 function Obrigado() {
   return (
     <>
-      <Helmet>
-        {" "}
-        <title>Obrigado por Entrar em Contato!</title>{" "}
-        <meta
-          name="description"
-          content="Agradecemos por seu contato. Em breve retornaremos!"
-        />{" "}
-        {/* Adicione outras meta tags necessárias para esta página */}{" "}
-      </Helmet>
-
       <section className={styles.obrigado}>
         <div className={styles.content}>
           <img src="" alt="" />
