@@ -1,8 +1,7 @@
 {
   "rewrites": [
     {
-      "source": "/(.*)",
-      "destination": "https://luizricarodev.com.br/$1"
+      "source": "/(.*)"
     }
   ]
 }
