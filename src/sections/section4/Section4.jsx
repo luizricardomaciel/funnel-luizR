@@ -21,13 +21,13 @@ function Section4() {
                 <p>Manutenção</p>
               </div>
               <div className={styles.bot}>
-                <p>para quem já tem um site</p>
+                <p>Mantenha seu site sempre online e seguro. Garanta sua vaga agora e evite problemas!</p>
                 <div className={styles.value}>
                   <h3>12x R$99,70</h3>
                   <p>à vista R$997,00</p>
                 </div>
                 <button className="btn-primary" onClick={() => setForm(true)}>
-                  <h3>Contrate Agora</h3>
+                  <h3>Contrate agora</h3>
                 </button>
               </div>
             </div>
@@ -38,13 +38,13 @@ function Section4() {
                 <p>Site PRO</p>
               </div>
               <div className={styles.bot}>
-                <p>Solução ideal para alavancar seu negócio</p>
+                <p>Expanda seus negócios online com um site profissional e otimizado. 2 Vagas por mês!</p>
                 <div className={styles.value}>
                   <h3>12x R$119,70</h3>
                   <p>à vista R$1197,00</p>
                 </div>
                 <button className="btn-primary" onClick={() => setForm(true)}>
-                  <h3>Contrate Agora</h3>
+                  <h3>Última vaga para este mês!</h3>
                 </button>
               </div>
             </div>
@@ -55,13 +55,13 @@ function Section4() {
                 <p>Site institucional</p>
               </div>
               <div className={styles.bot}>
-                <p>A Solução Completa para Impulsionar sua Presença Online</p>
+                <p>Construa uma imagem sólida para sua empresa. Últimas vagas para este plano!</p>
                 <div className={styles.value}>
                   <h3>12x R$299,68</h3>
                   <p>à vista R$2.997,00</p>
                 </div>
                 <button className="btn-primary" onClick={() => setForm(true)}>
-                  <h3>Contrate Agora</h3>
+                  <h3>Última vaga para este mês!</h3>
                 </button>
               </div>
             </div>
