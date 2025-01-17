@@ -7,6 +7,7 @@ import "./Swiper.css";
 import blizzard from "../../../assets/blizzard.png";
 import neon from "../../../assets//neon.png";
 import wireframe from "../../../assets/wireframe.png";
+import fortalecendoSuaFe from "../../../assets/fortalecendo-sua-fe.png";
 
 const Slide = () => {
   return (
@@ -21,6 +22,11 @@ const Slide = () => {
         <SwiperSlide>
           <a href="https://project-blizzard.vercel.app/" target="_blank">
             <img src={blizzard} alt="" />
+          </a>
+        </SwiperSlide>
+        <SwiperSlide>
+          <a href="https://fortalecendosuafe.com.br/" target="_blank">
+            <img src={fortalecendoSuaFe} alt="" />
           </a>
         </SwiperSlide>
         <SwiperSlide>
