@@ -11,17 +11,18 @@ function Section4() {
     <section id="section4">
       <AnimatedElement />
       <div className={styles.container}>
-        <h2 data-aos="fade-left">
-          Escolha o Plano Perfeito para o Sucesso do Seu Site
-        </h2>
+        <h2 data-aos="fade-left">Escolha o Plano Perfeito para o Sucesso do Seu Site</h2>
         <div className={styles.content}>
           <div className={styles.animate} data-aos="fade-up">
             <div className={styles.card}>
               <div className={styles.title}>
-                <p>Manutenção</p>
+                <p>Manutenção Anual</p>
               </div>
               <div className={styles.bot}>
-                <p>Mantenha seu site sempre online e seguro. Garanta sua vaga agora e evite problemas!</p>
+                <p>
+                  Mantenha seu site sempre online e seguro com nosso plano de manutenção
+                  anual. Garanta sua vaga agora e evite problemas!
+                </p>
                 <div className={styles.value}>
                   <h3>12x R$99,70</h3>
                   <p>à vista R$997,00</p>
@@ -38,10 +39,10 @@ function Section4() {
                 <p>Site PRO</p>
               </div>
               <div className={styles.bot}>
-                <p>Expanda seus negócios online com um site profissional e otimizado. 2 Vagas por mês!</p>
+                <p>Expanda seus negócios online com um site profissional e otimizado.</p>
                 <div className={styles.value}>
-                  <h3>12x R$119,70</h3>
-                  <p>à vista R$1197,00</p>
+                  <h3>12x R$55,99</h3>
+                  <p>à vista R$597,00</p>
                 </div>
                 <button className="btn-primary" onClick={() => setForm(true)}>
                   <h3>Última vaga para este mês!</h3>
@@ -55,10 +56,13 @@ function Section4() {
                 <p>Site institucional</p>
               </div>
               <div className={styles.bot}>
-                <p>Construa uma imagem sólida para sua empresa. Últimas vagas para este plano!</p>
+                <p>
+                  Construa uma imagem sólida para sua empresa. Últimas vagas para este
+                  plano!
+                </p>
                 <div className={styles.value}>
-                  <h3>12x R$299,68</h3>
-                  <p>à vista R$2.997,00</p>
+                  <h3>12x R$119,70</h3>
+                  <p>à vista R$1.197,00</p>
                 </div>
                 <button className="btn-primary" onClick={() => setForm(true)}>
                   <h3>Última vaga para este mês!</h3>
