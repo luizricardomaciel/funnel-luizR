@@ -4,6 +4,7 @@ import whats from "../../assets/whatsapp-icon.svg";
 import criador from "../../assets/foto pro 1.png";
 import AnimatedElement from "../AnimatedElement";
 import { useTranslation } from "react-i18next";
+import TechnicalButton from "../section1/TechnicalButton";
 
 function Section3() {
   const { t } = useTranslation();
@@ -26,21 +27,22 @@ function Section3() {
             <p>
               <strong>{t("section3.limited")}</strong> {t("section3.limitedDesc")}
             </p>
-            <a
+            <TechnicalButton 
               href={t("thanks.whatsappLink")}
               target="_blank"
-              className="btn-primary"
             >
-              <div className={styles.img}>
-                <img
-                  src={whats}
-                  alt="icone de WhatsApp em svg"
-                  title="icone whatsapp"
-                  className={styles.whats}
-                />
+              <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                <div className={styles.img} style={{ margin: 0 }}>
+                  <img
+                    src={whats}
+                    alt="icone de WhatsApp em svg"
+                    title="icone whatsapp"
+                    className={styles.whats}
+                  />
+                </div>
+                {t("section3.contact")}
               </div>
-              {t("section3.contact")}
-            </a>
+            </TechnicalButton>
           </div>
         </div>
         <div className={styles.boxImage} data-aos="fade-left" data-aos-delay="200">

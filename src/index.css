@@ -15,7 +15,7 @@
   outline: none;
   border: none;
   box-sizing: border-box;
-  font-family: 'Space Grotesk', 'Outfit', sans-serif;
+  font-family: 'Outfit', 'Space Grotesk', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -109,6 +109,20 @@ p {
 
 .noScroll {
   overflow: hidden;
+}
+
+.text-shine {
+  background: linear-gradient(to right, #fff 20%, #ff7509 50%, #fff 80%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shine 5s linear infinite;
+  display: inline-block;
+}
+
+@keyframes shine {
+  to { background-position: 200% center; }
 }
 
 @media (max-width: 768px) {

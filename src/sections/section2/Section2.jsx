@@ -6,6 +6,7 @@ import monitor from "../../assets/monitor-icon.svg";
 import Swiper from "./swiper/Slide";
 import AnimatedElement from "../AnimatedElement";
 import { useTranslation } from "react-i18next";
+import TechnicalButton from "../section1/TechnicalButton";
 
 function Section2() {
   const { t } = useTranslation();
@@ -27,13 +28,13 @@ function Section2() {
         <div className={style.bottom}>
           <div className={style.leftArea} data-aos="fade-up">
             <Swiper />
-            <a
-              href=""
-              onClick={() => scrollToSection("section5")}
-              className="btn-primary"
-            >
-              {t("section2.projectsButton")}
-            </a>
+            <div className={style.btnWrapper}>
+              <TechnicalButton
+                onClick={() => scrollToSection("section5")}
+              >
+                {t("section2.projectsButton")}
+              </TechnicalButton>
+            </div>
           </div>
           <div className={style.rightArea} data-aos="fade-left">
             <ul>

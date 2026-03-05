@@ -4,6 +4,7 @@ import AnimatedElement from "../AnimatedElement";
 import { useTranslation } from "react-i18next";
 
 import Form from "./Form/Form";
+import TechnicalButton from "../section1/TechnicalButton";
 
 function Section4() {
   const { t } = useTranslation();
@@ -29,9 +30,11 @@ function Section4() {
                     <h3>{t(`section4.plans.${id}.price`)}</h3>
                     <p>{t(`section4.plans.${id}.cash`)}</p>
                   </div>
-                  <button className="btn-primary" onClick={() => setForm(true)}>
-                    {t(`section4.plans.${id}.button`)}
-                  </button>
+                  <div style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
+                    <TechnicalButton onClick={() => setForm(true)}>
+                      {t(`section4.plans.${id}.button`)}
+                    </TechnicalButton>
+                  </div>
                 </div>
               </div>
             </div>

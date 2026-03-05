@@ -3,6 +3,7 @@ import styles from "./Section6.module.css";
 import arrow from "../../assets/arrow-icon.svg";
 import whats from "../../assets/whatsapp-icon.svg";
 import { useTranslation } from "react-i18next";
+import TechnicalButton from "../section1/TechnicalButton";
 
 function Section6() {
   const { t } = useTranslation();
@@ -57,21 +58,24 @@ function Section6() {
         <div className={styles.bot}>
           <h3 className={styles.title}>{t("section6.footer.title")}</h3>
           <p>{t("section6.footer.desc")}</p>
-          <a
-            href={t("thanks.whatsappLink")}
-            target="_blank"
-            className="btn-primary-white"
-          >
-            <div className={styles.img}>
-              <img
-                src={whats}
-                alt="icone de WhatsApp em svg"
-                title="icone whatsapp"
-                className={styles.whats}
-              />
-            </div>
-            {t("section6.footer.button")}
-          </a>
+          <div style={{ display: 'flex', justifyContent: 'center', marginTop: '20px' }}>
+            <TechnicalButton 
+              href={t("thanks.whatsappLink")}
+              target="_blank"
+            >
+              <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                <div className={styles.img} style={{ margin: 0 }}>
+                  <img
+                    src={whats}
+                    alt="icone de WhatsApp em svg"
+                    title="icone whatsapp"
+                    className={styles.whats}
+                  />
+                </div>
+                {t("section6.footer.button")}
+              </div>
+            </TechnicalButton>
+          </div>
         </div>
       </div>
     </section>

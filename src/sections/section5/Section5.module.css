@@ -10,7 +10,19 @@
   h2 {
     margin: 0 auto;
     text-align: center;
+    font-size: 5.6rem;
+    background: linear-gradient(to right, #fff 20%, #ff7509 50%, #fff 80%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: shine 5s linear infinite;
+    display: table;
   }
+}
+
+@keyframes shine {
+  to { background-position: 200% center; }
 }
 
 .content {

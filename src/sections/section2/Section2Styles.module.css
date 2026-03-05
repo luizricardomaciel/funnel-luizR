@@ -13,11 +13,18 @@
 
   h2 {
     font-size: 5.6rem;
-    background: linear-gradient(to right, #fff, #aaa);
+    background: linear-gradient(to right, #fff 20%, #ff7509 50%, #fff 80%);
+    background-size: 200% auto;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    animation: shine 5s linear infinite;
+    display: inline-block;
   }
+}
+
+@keyframes shine {
+  to { background-position: 200% center; }
 }
 
 .bottom {
@@ -35,8 +42,11 @@
   flex-direction: column;
   align-items: center;
 
-  a {
-    margin-top: 4.8rem;
+  .btnWrapper {
+    margin-top: 8rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 }
 
