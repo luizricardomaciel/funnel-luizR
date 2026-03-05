@@ -18,7 +18,6 @@ function Section1() {
       <AnimatedElement />
       <div className={style.container}>
         <div className={style.leftArea} data-aos="fade-right">
-          <span>{t("header.home")}</span>
           <h1>{t("section1.title")}</h1>
 
           <p>{t("section1.description")}</p>
