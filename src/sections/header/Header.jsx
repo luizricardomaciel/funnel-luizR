@@ -1,7 +1,9 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import styles from "./HeaderStyles.module.css";
+import { useTranslation } from "react-i18next";
 
 function Header() {
+  const { t, i18n } = useTranslation();
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -11,6 +13,13 @@ function Header() {
     } else {
       document.body.classList.remove("noScroll");
     }
+  };
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+    const url = new URL(window.location);
+    url.searchParams.set("lang", lng);
+    window.history.replaceState({}, "", url);
   };
 
   const scrollToSection = (id) => {
@@ -45,23 +54,37 @@ function Header() {
                 Luiz <br /> Ricardo.
               </h1>
             </li>
+            <div className={styles.langDesktop}>
+              <button
+                onClick={() => changeLanguage("pt")}
+                className={i18n.language === "pt" ? styles.activeLang : ""}
+              >
+                <img src="https://flagcdn.com/w40/br.png" alt="PT-BR" />
+              </button>
+              <button
+                onClick={() => changeLanguage("en")}
+                className={i18n.language === "en" ? styles.activeLang : ""}
+              >
+                <img src="https://flagcdn.com/w40/us.png" alt="EN" />
+              </button>
+            </div>
             <li>
               <a
                 href=""
                 className={` ${menuOpen ? "" : ""}`}
                 onClick={() => scrollToSection("section2")}
               >
-                Como funciona
+                {t("header.howItWorks")}
               </a>
             </li>
             <li>
               <a href="" onClick={() => scrollToSection("section6")}>
-                Tire suas dúvidas
+                {t("header.faq")}
               </a>
             </li>
             <li>
               <a href="" onClick={() => scrollToSection("section3")}>
-                Fale comigo
+                {t("header.aboutMe")}
               </a>
             </li>
             <li>
@@ -70,9 +93,25 @@ function Header() {
                 onClick={() => scrollToSection("section4")}
                 className={`btn-primary ${styles.actionMobile}`}
               >
-                <h3>Contratar agora</h3>
+                {t("header.hireNow")}
               </a>
             </li>
+            <div className={styles.langMobile}>
+              <button
+                onClick={() => changeLanguage("pt")}
+                className={i18n.language === "pt" ? styles.activeLang : ""}
+              >
+                <img src="https://flagcdn.com/w40/br.png" alt="PT-BR" />
+                <span>Português</span>
+              </button>
+              <button
+                onClick={() => changeLanguage("en")}
+                className={i18n.language === "en" ? styles.activeLang : ""}
+              >
+                <img src="https://flagcdn.com/w40/us.png" alt="EN" />
+                <span>English</span>
+              </button>
+            </div>
           </ul>
         </nav>
       </div>

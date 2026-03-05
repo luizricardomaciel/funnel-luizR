@@ -1,7 +1,10 @@
-import React from "react";
+
 import styles from "./Footer.module.css";
+import { useTranslation } from "react-i18next";
 
 function Footer() {
+  const { t } = useTranslation();
+
   const scrollToSection = (id) => {
     event.preventDefault();
     document
@@ -24,27 +27,27 @@ function Footer() {
             <ul>
               <li>
                 <a href="" onClick={() => scrollToSection("header")}>
-                  Início
+                  {t("header.home")}
                 </a>
               </li>
               <li>
                 <a href="" onClick={() => scrollToSection("section2")}>
-                  Como funciona
+                  {t("header.howItWorks")}
                 </a>
               </li>
               <li>
                 <a href="" onClick={() => scrollToSection("section5")}>
-                  Projetos
+                  {t("section5.title").split(" ")[0]}
                 </a>
               </li>
               <li>
                 <a href="" onClick={() => scrollToSection("section3")}>
-                  Quem sou eu
+                  {t("header.aboutMe")}
                 </a>
               </li>
               <li>
                 <a href="" onClick={() => scrollToSection("section4")}>
-                  Contrate agora
+                  {t("header.hireNow")}
                 </a>
               </li>
             </ul>

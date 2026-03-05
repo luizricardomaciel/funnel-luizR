@@ -1,0 +1,119 @@
+{
+  "seo": {
+    "title": "Transform Your Business with High-Performance Websites!",
+    "description": "Web designer specialized in modern and functional sites. Increase your online visibility, win more customers and transform your business. Click here and find out more!"
+  },
+  "header": {
+    "home": "Home",
+    "howItWorks": "How it works",
+    "faq": "FAQ",
+    "contact": "Contact me",
+    "hireNow": "Hire now",
+    "aboutMe": "About me"
+  },
+  "section1": {
+    "title": "Transform your business with a high-quality professional website!",
+    "description": "Take advantage of this unique opportunity and hire my web development services to take your online presence to the next level. Contact me now and guarantee your exclusive website!",
+    "button": "Hire Now"
+  },
+  "section2": {
+    "title": "What makes my websites stand out and be on another level?",
+    "projectsButton": "See projects",
+    "features": {
+      "tailored": {
+        "title": "Custom Development",
+        "description": "Unlike many who use ready-made templates and are not true developers, I create your site from scratch, reflecting the essence of your business and ensuring a unique and personalized result."
+      },
+      "seo": {
+        "title": "Advanced SEO",
+        "description": "I use advanced SEO (Search Engine Optimization) techniques within the code to ensure that each site is optimized and aligned with market best practices."
+      },
+      "ux": {
+        "title": "User Experience",
+        "description": "I focus on creating intuitive and pleasant interfaces, ensuring that visitors have a fluid and satisfying experience."
+      }
+    }
+  },
+  "section3": {
+    "intro": "Hi, I'm Luiz Ricardo, a WEB Programmer specialized in creating unique digital experiences to drive your business! Unlike many designers who use ready-made templates, I develop each site from scratch, 100% personalized to reflect your brand's identity and goals.",
+    "whyMe": "Why choose my service?",
+    "reasons": "Because you will have a site that stands out from the competition, fully optimized and responsive, tailored to increase your online sales!",
+    "limited": "Limited Slots: Only 2 Monthly Projects!",
+    "limitedDesc": "Secure your spot now and invest in a high-impact online presence that really converts!",
+    "contact": "Get in touch"
+  },
+  "section4": {
+    "title": "Choose the Perfect Plan for Your Website's Success",
+    "plans": {
+      "maintenance": {
+        "name": "Annual Maintenance",
+        "desc": "Keep your site always online, secure and updated. Perfect for those who already have a site and value stability and continuous performance without technical headaches.",
+        "price": "Personalized Quote",
+        "cash": "Consult for details",
+        "button": "Get a Quote"
+      },
+      "pro": {
+        "name": "Site PRO",
+        "desc": "A complete and high-performance website optimized for conversions. Ideal for professionals and businesses that want to stand out in the market with a custom-made solution.",
+        "price": "Personalized Quote",
+        "cash": "Consult for details",
+        "button": "I want this plan"
+      },
+      "institutional": {
+        "name": "Institutional Site",
+        "desc": "A robust multi-page structure for complex businesses. Includes deep funnels, multiple sections, and complete brand positioning for high-ticket sales.",
+        "price": "Personalized Quote",
+        "cash": "Consult for details",
+        "button": "Check availability"
+      }
+    },
+    "form": {
+      "title": "Fill out the form below",
+      "name": "Your name:",
+      "email": "Your best email:",
+      "whatsapp": "WhatsApp:",
+      "submit": "Secure my spot"
+    }
+  },
+  "section5": {
+    "title": "Check out some projects I have developed",
+    "projects": {
+      "neon": "Project NEON",
+      "lp": "Landing Page Project",
+      "blizzard": "Project Blizzard",
+      "wireframe": "Wireframe Project"
+    }
+  },
+  "section6": {
+    "title": "Frequently Asked Questions",
+    "questions": [
+      {
+        "q": "What is your differential compared to others?",
+        "a": "As a developer, I create real websites, all in code! Usually, other professionals who create sites are not programmers; they just use 'drag and drop' style programs, and the program generates the code automatically. What's the problem? Limitations! If you want something custom, you won't have it. If you want a movement effect, you won't have it. And many other limitations.\n\nIn addition, I have worked in large companies, where I acquired vast experience and advanced web development skills. This background allows me to offer high-quality and personalized solutions for each client."
+      },
+      {
+        "q": "What is the difference between the plans?",
+        "a": "Maintenance is for those who already have a site and need to make small changes.\nSite Pro is for those who want to have a professional site.\nInstitutional Site is a site with multiple pages, perfect for those who need different sections and redirects, ideal for creating sales funnels."
+      },
+      {
+        "q": "Which plan should I choose?",
+        "a": "If you are a legal professional, doctor, dentist or work in any other area as a freelancer, Site Pro is for you. But if you need a site that leads to other pages and allows for advanced sales schemes, such as for digital marketing, the Institutional Site is the ideal choice."
+      },
+      {
+        "q": "How is the site made?",
+        "a": "Websites take some time to be made because I need to know how you want the site so I can customize it to your liking. So, I create a sketch of the site so you can see what it will look like complete before it's even coded, like it's a photo of your ready site, but it will just be an image. Then, I will start programming from scratch until the final project."
+      }
+    ],
+    "footer": {
+      "title": "Get in touch",
+      "desc": "Do you have any questions or need help with your purchase? Contact me now and resolve all your questions quickly!",
+      "button": "Get in touch"
+    }
+  },
+  "thanks": {
+    "title": "Thank you for your contact!",
+    "desc": "Click the button below and speak directly with me on WhatsApp. Your success is just one click away!",
+    "button": "Get in touch",
+    "whatsappLink": "https://wa.me/5574988723538?text=Hello%20Luiz!%20I%20am%20interested%20in%20creating%20a%20website.%20Can%20we%20talk%20more%20about%20my%20project?"
+  }
+}

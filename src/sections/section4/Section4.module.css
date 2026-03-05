@@ -1,140 +1,120 @@
 .container {
   width: 100%;
   max-width: 1246px;
-  padding: 0 15px;
+  padding: 10rem 20px;
   margin: 0 auto;
-  padding-top: 210px;
-  padding-bottom: 36px;
   position: relative;
   overflow: hidden;
 
   h2 {
-    width: 100%;
-    max-width: 60rem;
-    margin: 0 auto;
     text-align: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    font-size: 5.6rem;
   }
 }
 
 .content {
-  width: 100%;
-  max-width: 100%;
-  margin-top: 12rem;
+  margin-top: 8rem;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 3.2rem;
 }
 
 .animate {
-  width: 100%;
-  max-width: 39.2rem;
+  flex: 1;
+  min-width: 32rem;
+  max-width: 39rem;
 }
-.card {
-  width: 100%;
-  max-width: 39.2rem;
-  height: 44.9rem;
 
-  border: 1px solid rgba(90, 90, 90, 0.5);
-  border-radius: 32px;
-  transition: transform 200ms ease-in-out;
+.card {
+  height: 100%;
+  border-radius: 4rem;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  padding-bottom: 4rem;
 
   .title {
-    width: 100%;
-    max-width: 39.2rem;
-    height: 96px;
-
-    background: #5a5a5a;
-    border-radius: 32px 32px 0px 0px;
+    padding: 4rem 2rem;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    background: rgba(255,255,255, 0.05);
 
     p {
-      font-weight: 700;
-      font-size: 30px;
-      color: #ffffff;
+      font-size: 3rem;
+      font-weight: 800;
+      color: white;
+      text-transform: uppercase;
+      letter-spacing: 1px;
     }
+
     &.titleClick {
-      background: linear-gradient(269.77deg, #ff0022 0.29%, #ff7509 82.2%);
+      background: var(--primary-gradient);
     }
   }
 
   .bot {
-    padding: 24px;
+    padding: 4rem 3rem 0;
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    text-align: center;
+    gap: 3rem;
+
     p {
-      font-weight: 700;
-      font-size: 1.6rem;
-      text-align: center;
-      color: #ffffff;
-      height: 4.2rem;
+      color: #b5b5b5;
+      font-size: 1.8rem;
+      line-height: 1.6;
+      font-weight: 500;
+      min-height: 10rem;
     }
 
     .value {
-      margin-top: 6rem;
+      background: rgba(255, 255, 255, 0.03);
+      padding: 3rem 2rem;
+      border-radius: 2.4rem;
+      margin: 2rem 0;
+      border: 1px solid rgba(255, 255, 255, 0.05);
 
       h3 {
-        font-family: "Space Grotesk";
-        font-weight: 700;
-        font-size: 3.6rem;
-        text-align: center;
-        color: #ffffff;
+        font-size: 2.8rem;
+        background: linear-gradient(135deg, #fff 0%, #aaa 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
       }
+
       p {
-        margin-top: 1.5rem;
-        font-weight: 500;
-        font-size: 1.6rem;
-        line-height: 120%;
-        text-align: center;
-        height: 1.9rem;
+        margin-top: 1rem;
+        font-size: 1.5rem;
+        min-height: auto;
       }
     }
 
     button {
-      margin-top: 5.6rem;
-      max-width: 100%;
-    }
-    a {
-      margin-top: 5.6rem;
-      max-width: 100%;
+      margin-top: auto;
+      width: 100%;
     }
   }
-  &:hover {
-    transform: scale(1.05);
-  }
-  &:active {
-    transform: translateY(2px);
-  }
-}
 
-@media (max-width: 1250px) {
-  .container {
-    padding-top: 9.4rem;
+  &:hover {
+    transform: translateY(-15px) scale(1.02);
+    box-shadow: 0 40px 100px rgba(0, 0, 0, 0.4);
+    border-color: rgba(255, 117, 9, 0.3);
   }
 }
 
 @media (max-width: 900px) {
   .container {
-    padding-top: 7.1rem;
+    padding: 6rem 15px;
+    h2 { font-size: 3.6rem; }
   }
-  h2 {
-    font-size: 3.2rem;
-  }
-  .content {
-    margin-top: 5.5rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .container {
-    padding-top: 11rem;
-  }
-  .content {
-    margin-top: 3.6rem;
-  }
+  .content { margin-top: 5rem; }
 }

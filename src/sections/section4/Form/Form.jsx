@@ -1,10 +1,13 @@
-import React from "react";
+
 import ReactDOM from "react-dom";
 import styles from "./Form.module.css";
 import closeIcon from "../../../assets/close-icon.svg";
 import closeIconBlack from "../../../assets/close-icon-black.svg";
+import { useTranslation } from "react-i18next";
 
 function Form({ show, onClose }) {
+  const { t } = useTranslation();
+
   if (!show) {
     document.body.classList.remove("noScroll");
     return null;
@@ -28,7 +31,7 @@ function Form({ show, onClose }) {
           />
         </button>
         <div className={styles.text}>
-          <h2>Preencha o formulário abaixo</h2>
+          <h2>{t("section4.form.title")}</h2>
         </div>
         <form action="https://api.web3forms.com/submit" method="POST">
           <input
@@ -40,26 +43,26 @@ function Form({ show, onClose }) {
             type="text"
             id="nome"
             name="nome"
-            placeholder="Seu nome:"
+            placeholder={t("section4.form.name")}
             required
           />
           <input
             type="email"
             name="email"
             id="email"
-            placeholder="Seu melhor e-mail:"
+            placeholder={t("section4.form.email")}
             required
           />
           <input
             type="tel"
             id="whatsapp"
             name="whatsapp"
-            placeholder="Whatsapp:"
+            placeholder={t("section4.form.whatsapp")}
             required
           />
           <input
             type="submit"
-            value="Garantir minha vaga"
+            value={t("section4.form.submit")}
             className={styles.btnForms}
           />
           <input

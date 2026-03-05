@@ -1,12 +1,15 @@
-import React from "react";
+
 import style from "./Section2Styles.module.css";
 import engrenagem from "../../assets/engrenagem-icon.svg";
 import graphic from "../../assets/grafico-icon.svg";
 import monitor from "../../assets/monitor-icon.svg";
 import Swiper from "./swiper/Slide";
 import AnimatedElement from "../AnimatedElement";
+import { useTranslation } from "react-i18next";
 
 function Section2() {
+  const { t } = useTranslation();
+
   const scrollToSection = (id) => {
     event.preventDefault();
     document
@@ -19,9 +22,7 @@ function Section2() {
       <AnimatedElement />
       <div className={style.container}>
         <div className={style.text} data-aos="fade-right">
-          <h2>
-            O que faz com que meus sites se destaquem e sejam de outro nível?
-          </h2>
+          <h2>{t("section2.title")}</h2>
         </div>
         <div className={style.bottom}>
           <div className={style.leftArea} data-aos="fade-up">
@@ -31,7 +32,7 @@ function Section2() {
               onClick={() => scrollToSection("section5")}
               className="btn-primary"
             >
-              <h3>Ver projetos</h3>
+              {t("section2.projectsButton")}
             </a>
           </div>
           <div className={style.rightArea} data-aos="fade-left">
@@ -41,15 +42,10 @@ function Section2() {
                   <div className={style.icon}>
                     <img src={engrenagem} alt="programador web sob medida" />
                   </div>
-                  <h3>Desenvolvimento Sob Medida</h3>
+                  <h3>{t("section2.features.tailored.title")}</h3>
                 </div>
                 <div className={style.textBot}>
-                  <p>
-                    Ao contrário de muitos que usam templates prontos e não são
-                    verdadeiros programadores, eu crio seu site do zero,
-                    refletindo a essência do seu negócio e garantindo um
-                    resultado único e personalizado.
-                  </p>
+                  <p>{t("section2.features.tailored.description")}</p>
                 </div>
               </li>
               <li>
@@ -57,15 +53,10 @@ function Section2() {
                   <div className={style.icon}>
                     <img src={graphic} alt="programador web sob medida" />
                   </div>
-                  <h3>SEO Avançado</h3>
+                  <h3>{t("section2.features.seo.title")}</h3>
                 </div>
                 <div className={style.textBot}>
-                  <p>
-                    Utilizo técnicas avançadas de SEO(Search Engine
-                    Optimization) dentro do código para garantir que cada site
-                    esteja otimizado e alinhado com as melhores práticas do
-                    mercado.
-                  </p>
+                  <p>{t("section2.features.seo.description")}</p>
                 </div>
               </li>
               <li>
@@ -73,14 +64,10 @@ function Section2() {
                   <div className={style.icon}>
                     <img src={monitor} alt="programador web sob medida" />
                   </div>
-                  <h3>Experiência de Usuário</h3>
+                  <h3>{t("section2.features.ux.title")}</h3>
                 </div>
                 <div className={style.textBot}>
-                  <p>
-                    Foco na criação de interfaces intuitivas e agradáveis,
-                    garantindo que os visitantes tenham uma experiência fluida e
-                    satisfatória.
-                  </p>
+                  <p>{t("section2.features.ux.description")}</p>
                 </div>
               </li>
             </ul>
