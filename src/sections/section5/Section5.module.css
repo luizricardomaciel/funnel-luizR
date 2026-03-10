@@ -204,7 +204,7 @@
 @media (max-width: 900px) {
   .container { padding-top: 100px; padding-bottom: 60px; }
   .content { margin-top: 6rem; gap: 4rem; }
-  .cardContainer { width: 280px; height: 300px; }
+  .cardContainer { width: 260px; height: 280px; }
   .box h3 { font-size: 2rem; }
 }
 

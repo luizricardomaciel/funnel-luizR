@@ -92,7 +92,8 @@
   }
   .rightArea {
     margin-top: 50px;
-    width: 80%;
+    width: 100%;
+    max-width: 320px;
   }
   .leftArea {
     align-items: center;
@@ -127,6 +128,7 @@
   --c-color: #fff;
   -webkit-tap-highlight-color: transparent;
   -webkit-appearance: none;
+  appearance: none;
   border: none;
   cursor: pointer;
   border-radius: 100px;

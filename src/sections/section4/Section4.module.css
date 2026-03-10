@@ -51,7 +51,7 @@
 
 .animate {
   flex: 1;
-  min-width: 34rem;
+  min-width: 28rem;
   max-width: 40rem;
   position: relative;
 }
