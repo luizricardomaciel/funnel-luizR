@@ -12,7 +12,7 @@
   margin-bottom: clamp(4rem, 8vw, 8rem);
 
   h2 {
-    font-size: clamp(3.2rem, 7vw, 5.6rem);
+    font-size: clamp(3.6rem, 7.5vw, 5.6rem);
     background: linear-gradient(to right, #fff 20%, #ff7509 50%, #fff 80%);
     background-size: 200% auto;
     -webkit-background-clip: text;
@@ -79,7 +79,7 @@
         margin-bottom: 1.6rem;
 
         h3 {
-          font-size: clamp(2rem, 4.5vw, 2.4rem);
+          font-size: clamp(2.2rem, 5vw, 2.4rem);
           color: white;
           line-height: 1.2;
         }
@@ -104,7 +104,7 @@
 
       .textBot {
         p {
-          font-size: clamp(1.4rem, 3vw, 1.6rem);
+          font-size: clamp(1.6rem, 3.5vw, 1.6rem);
           line-height: 1.7;
           color: #b5b5b5;
         }
@@ -118,12 +118,12 @@
     flex-direction: column;
     gap: 4rem;
   }
-  .text h2 { font-size: clamp(2.8rem, 6vw, 4rem); }
+  .text h2 { font-size: clamp(3rem, 6.5vw, 4rem); }
 }
 
 @media (max-width: 768px) {
   .container { padding: clamp(4rem, 8vw, 8rem) 15px; }
-  .text h2 { font-size: clamp(2.4rem, 6vw, 3.2rem); }
+  .text h2 { font-size: clamp(2.8rem, 6.5vw, 3.2rem); }
   
   .rightArea ul li {
     padding: clamp(1.6rem, 3vw, 2.4rem);

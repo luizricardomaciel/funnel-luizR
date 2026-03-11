@@ -33,7 +33,7 @@ header {
       position: absolute;
       left: -1rem;
       top: 0.5rem;
-      height: 63px;
+      height: clamp(40px, 8vw, 63px);
       width: 2px;
       background: linear-gradient(to top, #ff0022 0.29%, #ff7509 82.2%);
     }
@@ -196,8 +196,8 @@ a {
       content: "";
       position: absolute;
       left: 2rem;
-      top: clamp(10rem, 15vw, 12.5rem);
-      height: 178px;
+      top: clamp(8rem, 12vw, 12.5rem);
+      height: clamp(120px, 20vw, 178px);
       width: 2px;
       background: linear-gradient(to top, #ff0022 0.29%, #ff7509 82.2%);
     }

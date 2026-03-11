@@ -10,7 +10,7 @@
   h2 {
     margin: 0 auto;
     text-align: center;
-    font-size: clamp(3.2rem, 7vw, 5.6rem);
+    font-size: clamp(3.6rem, 7.5vw, 5.6rem);
     background: linear-gradient(to right, #fff 20%, #ff7509 50%, #fff 80%);
     background-size: 200% auto;
     -webkit-background-clip: text;
@@ -45,7 +45,7 @@
   h3 {
     text-align: center;
     margin-top: clamp(1.6rem, 3vw, 2.4rem);
-    font-size: clamp(1.8rem, 4vw, 2.4rem);
+    font-size: clamp(2rem, 4.5vw, 2.4rem);
     color: #fff;
     font-family: 'Space Grotesk', sans-serif;
     max-width: 320px;
@@ -208,11 +208,11 @@
   .container { padding-top: clamp(6rem, 10vw, 100px); padding-bottom: clamp(4rem, 8vw, 60px); }
   .content { margin-top: clamp(4rem, 8vw, 6rem); gap: 3rem 2.4rem; }
   .cardContainer { width: clamp(240px, 65vw, 260px); height: clamp(260px, 70vw, 280px); }
-  .box h3 { font-size: clamp(1.6rem, 3.5vw, 2rem); }
+  .box h3 { font-size: clamp(1.8rem, 4vw, 2rem); }
 }
 
 @media (max-width: 768px) {
-  .container h2 { font-size: clamp(2.6rem, 6vw, 3.6rem); }
+  .container h2 { font-size: clamp(3rem, 6.5vw, 3.6rem); }
   
   .cardContainer {
     width: clamp(220px, 60vw, 260px);
@@ -231,7 +231,7 @@
   }
   
   .container h2 {
-    font-size: clamp(2.2rem, 6vw, 3rem);
+    font-size: clamp(2.6rem, 6.5vw, 3rem);
   }
   
   .content {
@@ -245,7 +245,7 @@
   }
   
   .box h3 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     max-width: 280px;
   }
 }
