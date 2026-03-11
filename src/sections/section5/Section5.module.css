@@ -3,14 +3,14 @@
   max-width: 1246px;
   padding: 0 15px;
   margin: 0 auto;
-  padding-top: 180px;
-  padding-bottom: 120px;
+  padding-top: clamp(10rem, 15vw, 180px);
+  padding-bottom: clamp(6rem, 10vw, 120px);
   overflow-x: hidden;
 
   h2 {
     margin: 0 auto;
     text-align: center;
-    font-size: 5.6rem;
+    font-size: clamp(3.2rem, 7vw, 5.6rem);
     background: linear-gradient(to right, #fff 20%, #ff7509 50%, #fff 80%);
     background-size: 200% auto;
     -webkit-background-clip: text;
@@ -18,6 +18,8 @@
     color: transparent;
     animation: shine 5s linear infinite;
     display: table;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
   }
 }
 
@@ -31,8 +33,8 @@
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
-  margin-top: 12rem;
-  gap: 6rem 4rem;
+  margin-top: clamp(6rem, 10vw, 12rem);
+  gap: clamp(3rem, 6vw, 6rem) clamp(2.4rem, 4vw, 4rem);
 }
 
 .box {
@@ -42,19 +44,20 @@
 
   h3 {
     text-align: center;
-    margin-top: 2.4rem;
-    font-size: 2.4rem;
+    margin-top: clamp(1.6rem, 3vw, 2.4rem);
+    font-size: clamp(1.8rem, 4vw, 2.4rem);
     color: #fff;
     font-family: 'Space Grotesk', sans-serif;
     max-width: 320px;
+    line-height: 1.3;
   }
 }
 
 /* 3D Tilt Effect Styles */
 .cardContainer {
   position: relative;
-  width: 320px;
-  height: 340px;
+  width: clamp(260px, 70vw, 320px);
+  height: clamp(280px, 75vw, 340px);
   transition: 200ms;
 }
 
@@ -75,7 +78,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 20px;
+  border-radius: clamp(16px, 4vw, 20px);
   transition: 500ms ease-out;
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -202,12 +205,47 @@
 .tr25:hover ~ .cardBody { transform: rotateX(-20deg) rotateY(20deg); }
 
 @media (max-width: 900px) {
-  .container { padding-top: 100px; padding-bottom: 60px; }
-  .content { margin-top: 6rem; gap: 4rem; }
-  .cardContainer { width: 260px; height: 280px; }
-  .box h3 { font-size: 2rem; }
+  .container { padding-top: clamp(6rem, 10vw, 100px); padding-bottom: clamp(4rem, 8vw, 60px); }
+  .content { margin-top: clamp(4rem, 8vw, 6rem); gap: 3rem 2.4rem; }
+  .cardContainer { width: clamp(240px, 65vw, 260px); height: clamp(260px, 70vw, 280px); }
+  .box h3 { font-size: clamp(1.6rem, 3.5vw, 2rem); }
 }
 
 @media (max-width: 768px) {
-  .container h2 { font-size: 3.6rem; }
+  .container h2 { font-size: clamp(2.6rem, 6vw, 3.6rem); }
+  
+  .cardContainer {
+    width: clamp(220px, 60vw, 260px);
+    height: clamp(240px, 65vw, 280px);
+  }
+  
+  .content {
+    gap: 2.4rem 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding-top: clamp(4rem, 8vw, 80px);
+    padding-bottom: clamp(3rem, 6vw, 50px);
+  }
+  
+  .container h2 {
+    font-size: clamp(2.2rem, 6vw, 3rem);
+  }
+  
+  .content {
+    margin-top: 3rem;
+    gap: 2rem 1.6rem;
+  }
+  
+  .cardContainer {
+    width: clamp(200px, 55vw, 240px);
+    height: clamp(220px, 60vw, 260px);
+  }
+  
+  .box h3 {
+    font-size: 1.6rem;
+    max-width: 280px;
+  }
 }

@@ -1,23 +1,23 @@
 .container {
   width: 100%;
   max-width: 1246px;
-  padding: 15rem 20px;
+  padding: clamp(8rem, 12vw, 15rem) 20px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 8rem;
+  gap: clamp(4rem, 8vw, 8rem);
   position: relative;
 }
 
 .boxImage {
   flex: 1;
   max-width: 50rem;
-  border-radius: 4rem;
+  border-radius: clamp(2rem, 4vw, 4rem);
   overflow: hidden;
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
   position: relative;
-  
+
   img {
     width: 100%;
     height: auto;
@@ -41,11 +41,12 @@
   flex: 1.2;
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: clamp(2.4rem, 5vw, 4rem);
 
   h1 {
-    font-size: 8.6rem;
-    line-height: 1;
+    font-size: clamp(3.6rem, 8vw, 8.6rem);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
     background: linear-gradient(to right, #fff 20%, #ff7509 50%, #fff 80%);
     background-size: 200% auto;
     -webkit-background-clip: text;
@@ -63,11 +64,11 @@
 .info {
   display: flex;
   flex-direction: column;
-  gap: 3.2rem;
+  gap: clamp(2rem, 4vw, 3.2rem);
 
   p {
-    font-size: 2rem;
-    line-height: 1.6;
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    line-height: 1.7;
     color: #b5b5b5;
 
     strong {
@@ -75,7 +76,7 @@
       font-weight: 700;
       display: block;
       margin-bottom: 0.8rem;
-      font-size: 2.2rem;
+      font-size: clamp(1.8rem, 3.5vw, 2.2rem);
     }
   }
 
@@ -90,13 +91,33 @@
   .container {
     flex-direction: column-reverse;
     text-align: center;
-    padding: 10rem 20px;
+    padding: clamp(6rem, 10vw, 10rem) 20px;
   }
-  .left h1 { font-size: 6.4rem; }
+  .left h1 { font-size: clamp(3.2rem, 7vw, 6.4rem); }
   .boxImage { max-width: 100%; }
 }
 
 @media (max-width: 768px) {
-  .left h1 { font-size: 4.8rem; }
-  .info p { font-size: 1.6rem; }
+  .left h1 { font-size: clamp(2.8rem, 7vw, 4.8rem); }
+  .info p { font-size: 1.5rem; }
+  .info { gap: 2rem; }
+  
+  .boxImage {
+    border-radius: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: clamp(4rem, 8vw, 6rem) 15px;
+    gap: 2rem;
+  }
+  
+  .left h1 {
+    font-size: clamp(2.4rem, 8vw, 4rem);
+  }
+  
+  .info p {
+    font-size: 1.4rem;
+  }
 }
