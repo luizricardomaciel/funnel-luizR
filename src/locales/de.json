@@ -1,0 +1,119 @@
+{
+  "seo": {
+    "title": "Transformieren Sie Ihr Geschäft mit Hochleistungs-Websites!",
+    "description": "Webdesigner spezialisiert auf moderne und funktionale Websites. Steigern Sie Ihre Online-Sichtbarkeit, gewinnen Sie mehr Kunden und transformieren Sie Ihr Geschäft. Klicken Sie hier und erfahren Sie mehr!"
+  },
+  "header": {
+    "home": "Startseite",
+    "howItWorks": "Wie es funktioniert",
+    "faq": "FAQ",
+    "contact": "Kontaktieren Sie mich",
+    "hireNow": "Jetzt beauftragen",
+    "aboutMe": "Über mich"
+  },
+  "section1": {
+    "title": "Transformieren Sie Ihr Geschäft mit einer hochwertigen professionellen Website!",
+    "description": "Nutzen Sie diese einmalige Gelegenheit und beauftragen Sie meine Webentwicklungsdienste, um Ihre Online-Präsenz auf die nächste Stufe zu heben. Kontaktieren Sie mich jetzt und sichern Sie sich Ihre exklusive Website!",
+    "button": "Jetzt Beauftragen"
+  },
+  "section2": {
+    "title": "Was macht meine Websites besonders und andersartig?",
+    "projectsButton": "Projekte ansehen",
+    "features": {
+      "tailored": {
+        "title": "Maßgeschneiderte Entwicklung",
+        "description": "Im Gegensatz zu vielen, die vorgefertigte Vorlagen verwenden und keine echten Entwickler sind, erstelle ich Ihre Website von Grund auf neu, spiegele die Essenz Ihres Geschäfts wider und sorge für ein einzigartiges und personalisiertes Ergebnis."
+      },
+      "seo": {
+        "title": "Fortgeschrittenes SEO",
+        "description": "Ich verwende fortschrittliche SEO-Techniken (Suchmaschinenoptimierung) im Code, um sicherzustellen, dass jede Website optimiert und mit den besten Praktiken des Marktes abgestimmt ist."
+      },
+      "ux": {
+        "title": "Benutzererfahrung",
+        "description": "Ich konzentriere mich auf die Erstellung intuitiver und angenehmer Oberflächen und stelle sicher, dass Besucher ein flüssiges und zufriedenstellendes Erlebnis haben."
+      }
+    }
+  },
+  "section3": {
+    "intro": "Hallo, ich bin Luiz Ricardo, WEB-Programmierer, spezialisiert auf die Erstellung einzigartiger digitaler Erlebnisse, um Ihr Geschäft voranzubringen! Im Gegensatz zu vielen Designern, die vorgefertigte Vorlagen verwenden, entwickle ich jede Website von Grund auf neu, 100% personalisiert, um die Identität und Ziele Ihrer Marke widerzuspiegeln.",
+    "whyMe": "Warum meinen Service wählen?",
+    "reasons": "Weil Sie eine Website erhalten, die sich von der Konkurrenz abhebt, vollständig optimiert und responsiv ist, maßgeschneidert, um Ihre Online-Verkäufe zu steigern!",
+    "limited": "Begrenzte Plätze: Nur 2 Monatliche Projekte!",
+    "limitedDesc": "Sichern Sie sich jetzt Ihren Platz und investieren Sie in eine wirkungsvolle Online-Präsenz, die wirklich konvertiert!",
+    "contact": "Kontakt aufnehmen"
+  },
+  "section4": {
+    "title": "Wählen Sie den perfekten Plan für den Erfolg Ihrer Website",
+    "plans": {
+      "maintenance": {
+        "name": "Jährliche Wartung",
+        "desc": "Halten Sie Ihre Website immer online, sicher und aktuell. Perfekt für diejenigen, die bereits eine Website haben und Stabilität und kontinuierliche Leistung ohne technische Kopfschmerzen schätzen.",
+        "price": "Personalisiertes Angebot",
+        "cash": "Für Details konsultieren",
+        "button": "Angebot Anfordern"
+      },
+      "pro": {
+        "name": "Site PRO",
+        "desc": "Eine vollständige und hochleistungsfähige Website, optimiert für Conversions. Ideal für Fachleute und Unternehmen, die sich mit einer maßgeschneiderten Lösung vom Markt abheben möchten.",
+        "price": "Personalisiertes Angebot",
+        "cash": "Für Details konsultieren",
+        "button": "Ich möchte diesen Plan"
+      },
+      "institutional": {
+        "name": "Institutionelle Website",
+        "desc": "Eine robuste Multi-Page-Struktur für komplexe Unternehmen. Umfasst tiefe Funnel, mehrere Abschnitte und vollständige Markenpositionierung für High-Ticket-Verkäufe.",
+        "price": "Personalisiertes Angebot",
+        "cash": "Für Details konsultieren",
+        "button": "Verfügbarkeit prüfen"
+      }
+    },
+    "form": {
+      "title": "Füllen Sie das folgende Formular aus",
+      "name": "Ihr Name:",
+      "email": "Ihre beste E-Mail:",
+      "whatsapp": "WhatsApp:",
+      "submit": "Meinen Platz sichern"
+    }
+  },
+  "section5": {
+    "title": "Entdecken Sie einige Projekte, die ich entwickelt habe",
+    "projects": {
+      "neon": "Projekt NEON",
+      "lp": "Landing Page Projekt",
+      "blizzard": "Projekt Blizzard",
+      "wireframe": "Wireframe Projekt"
+    }
+  },
+  "section6": {
+    "title": "Häufig gestellte Fragen",
+    "questions": [
+      {
+        "q": "Was ist Ihr Unterschied zu anderen?",
+        "a": "Als Entwickler erstelle ich echte Websites, alles in Code! Normalerweise sind andere Fachleute, die Websites erstellen, keine Programmierer; sie verwenden nur Programme im Stil von 'Drag & Drop', und das Programm generiert den Code automatisch. Was ist das Problem? Einschränkungen! Wenn Sie etwas Benutzerdefiniertes möchten, werden Sie es nicht bekommen. Wenn Sie einen Bewegungseffekt möchten, werden Sie es nicht bekommen. Und viele andere Einschränkungen.\n\nAußerdem habe ich in großen Unternehmen gearbeitet, wo ich umfangreiche Erfahrung und fortgeschrittene Webentwicklungsfähigkeiten erworben habe. Dieser Hintergrund ermöglicht es mir, hochwertige und personalisierte Lösungen für jeden Kunden anzubieten."
+      },
+      {
+        "q": "Was ist der Unterschied zwischen den Plänen?",
+        "a": "Wartung ist für diejenigen, die bereits eine Website haben und kleine Änderungen vornehmen müssen.\nSite Pro ist für diejenigen, die eine professionelle Website haben möchten.\nInstitutionelle Website ist eine Website mit mehreren Seiten, perfekt für diejenigen, die verschiedene Abschnitte und Weiterleitungen benötigen, ideal für die Erstellung von Verkaufstrichtern."
+      },
+      {
+        "q": "Welchen Plan soll ich wählen?",
+        "a": "Wenn Sie ein juristischer Fachmann, Arzt, Zahnarzt sind oder in einem anderen Bereich als Freiberufler arbeiten, ist Site Pro für Sie. Aber wenn Sie eine Website benötigen, die zu anderen Seiten führt und erweiterte Verkaufsschemata ermöglicht, wie für digitales Marketing, ist die Institutionelle Website die ideale Wahl."
+      },
+      {
+        "q": "Wie wird die Website erstellt?",
+        "a": "Websites brauchen einige Zeit, um erstellt zu werden, da ich wissen muss, wie Sie die Website möchten, um sie nach Ihren Wünschen anzupassen. Also erstelle ich einen Entwurf der Website, damit Sie sehen können, wie sie vollständig aussehen wird, bevor sie sogar codiert wird, wie ein Foto Ihrer fertigen Website, aber es wird nur ein Bild sein. Dann werde ich von Grund auf neu programmieren, bis das Projekt abgeschlossen ist."
+      }
+    ],
+    "footer": {
+      "title": "Kontakt aufnehmen",
+      "desc": "Haben Sie Fragen oder benötigen Sie Hilfe bei Ihrem Kauf? Kontaktieren Sie mich jetzt und klären Sie alle Ihre Fragen schnell!",
+      "button": "Kontakt aufnehmen"
+    }
+  },
+  "thanks": {
+    "title": "Vielen Dank für Ihre Kontaktaufnahme!",
+    "desc": "Klicken Sie auf die Schaltfläche unten und sprechen Sie direkt mit mir über WhatsApp. Ihr Erfolg ist nur einen Klick entfernt!",
+    "button": "Kontakt aufnehmen",
+    "whatsappLink": "https://wa.me/5574988723538?text=Hallo%20Luiz!%20Ich%20bin%20daran%20interessiert,%20eine%20Website%20zu%20erstellen.%20K%C3%B6nnen%20wir%20mehr%20%C3%BCber%20mein%20Projekt%20sprechen?"
+  }
+}

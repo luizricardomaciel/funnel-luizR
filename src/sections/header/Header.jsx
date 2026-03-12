@@ -1,10 +1,19 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "./HeaderStyles.module.css";
 import { useTranslation } from "react-i18next";
+
+const languages = [
+  { code: "pt", flag: "https://flagcdn.com/w40/br.png", name: "Português" },
+  { code: "en", flag: "https://flagcdn.com/w40/us.png", name: "English" },
+  { code: "fr", flag: "https://flagcdn.com/w40/fr.png", name: "Français" },
+  { code: "de", flag: "https://flagcdn.com/w40/de.png", name: "Deutsch" },
+  { code: "it", flag: "https://flagcdn.com/w40/it.png", name: "Italiano" }
+];
 
 function Header() {
   const { t, i18n } = useTranslation();
   const [menuOpen, setMenuOpen] = useState(false);
+  const [langSelectorOpen, setLangSelectorOpen] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -20,7 +29,25 @@ function Header() {
     const url = new URL(window.location);
     url.searchParams.set("lang", lng);
     window.history.replaceState({}, "", url);
+    setLangSelectorOpen(false);
   };
+
+  const currentLang = languages.find(lang => lang.code === i18n.language) || languages[0];
+
+  // Close language selector when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      const langSelector = document.querySelector(`.${styles.langSelector}`);
+      if (langSelector && !langSelector.contains(event.target)) {
+        setLangSelectorOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
 
   const scrollToSection = (id) => {
     event.preventDefault();
@@ -54,19 +81,43 @@ function Header() {
                 Luiz <br /> Ricardo.
               </h1>
             </li>
-            <div className={styles.langDesktop}>
+            <div className={styles.langSelector}>
               <button
-                onClick={() => changeLanguage("pt")}
-                className={i18n.language === "pt" ? styles.activeLang : ""}
+                className={styles.langButton}
+                onClick={() => setLangSelectorOpen(!langSelectorOpen)}
               >
-                <img src="https://flagcdn.com/w40/br.png" alt="PT-BR" />
+                <img src={currentLang.flag} alt={currentLang.name} />
+                <span>{currentLang.name}</span>
+                <svg
+                  className={`${styles.arrowIcon} ${langSelectorOpen ? styles.arrowOpen : ""}`}
+                  width="12"
+                  height="8"
+                  viewBox="0 0 12 8"
+                  fill="none"
+                >
+                  <path
+                    d="M1 1L6 6L11 1"
+                    stroke="white"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
               </button>
-              <button
-                onClick={() => changeLanguage("en")}
-                className={i18n.language === "en" ? styles.activeLang : ""}
-              >
-                <img src="https://flagcdn.com/w40/us.png" alt="EN" />
-              </button>
+              {langSelectorOpen && (
+                <div className={styles.langDropdown}>
+                  {languages.map((lang) => (
+                    <button
+                      key={lang.code}
+                      onClick={() => changeLanguage(lang.code)}
+                      className={i18n.language === lang.code ? styles.activeLang : ""}
+                    >
+                      <img src={lang.flag} alt={lang.name} />
+                      <span>{lang.name}</span>
+                    </button>
+                  ))}
+                </div>
+              )}
             </div>
             <li>
               <a
@@ -98,19 +149,41 @@ function Header() {
             </li>
             <div className={styles.langMobile}>
               <button
-                onClick={() => changeLanguage("pt")}
-                className={i18n.language === "pt" ? styles.activeLang : ""}
+                className={styles.langButtonMobile}
+                onClick={() => setLangSelectorOpen(!langSelectorOpen)}
               >
-                <img src="https://flagcdn.com/w40/br.png" alt="PT-BR" />
-                <span>Português</span>
+                <img src={currentLang.flag} alt={currentLang.name} />
+                <span>{currentLang.name}</span>
+                <svg
+                  className={`${styles.arrowIcon} ${langSelectorOpen ? styles.arrowOpen : ""}`}
+                  width="12"
+                  height="8"
+                  viewBox="0 0 12 8"
+                  fill="none"
+                >
+                  <path
+                    d="M1 1L6 6L11 1"
+                    stroke="white"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
               </button>
-              <button
-                onClick={() => changeLanguage("en")}
-                className={i18n.language === "en" ? styles.activeLang : ""}
-              >
-                <img src="https://flagcdn.com/w40/us.png" alt="EN" />
-                <span>English</span>
-              </button>
+              {langSelectorOpen && (
+                <div className={styles.langDropdownMobile}>
+                  {languages.map((lang) => (
+                    <button
+                      key={lang.code}
+                      onClick={() => changeLanguage(lang.code)}
+                      className={i18n.language === lang.code ? styles.activeLang : ""}
+                    >
+                      <img src={lang.flag} alt={lang.name} />
+                      <span>{lang.name}</span>
+                    </button>
+                  ))}
+                </div>
+              )}
             </div>
           </ul>
         </nav>

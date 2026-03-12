@@ -1,0 +1,119 @@
+{
+  "seo": {
+    "title": "Trasforma la Tua Azienda con Siti Web ad Alte Prestazioni!",
+    "description": "Web designer specializzato in siti moderni e funzionali. Aumenta la tua visibilità online, conquista più clienti e trasforma la tua attività. Clicca qui e scopri di più!"
+  },
+  "header": {
+    "home": "Home",
+    "howItWorks": "Come funziona",
+    "faq": "FAQ",
+    "contact": "Contattami",
+    "hireNow": "Assumi ora",
+    "aboutMe": "Chi sono"
+  },
+  "section1": {
+    "title": "Trasforma la tua attività con un sito web professionale di alta qualità!",
+    "description": "Approfitta di questa opportunità unica e assumi i miei servizi di sviluppo web per portare la tua presenza online al livello successivo. Contattami ora e garantisciti il tuo sito web esclusivo!",
+    "button": "Assumi Ora"
+  },
+  "section2": {
+    "title": "Cosa rende i miei siti web eccezionali e di un altro livello?",
+    "projectsButton": "Vedi progetti",
+    "features": {
+      "tailored": {
+        "title": "Sviluppo Su Misura",
+        "description": "A differenza di molti che utilizzano modelli pronti e non sono veri sviluppatori, creo il tuo sito da zero, riflettendo l'essenza della tua attività e garantendo un risultato unico e personalizzato."
+      },
+      "seo": {
+        "title": "SEO Avanzato",
+        "description": "Utilizzo tecniche avanzate di SEO (Search Engine Optimization) all'interno del codice per garantire che ogni sito sia ottimizzato e allineato con le migliori pratiche del mercato."
+      },
+      "ux": {
+        "title": "Esperienza Utente",
+        "description": "Mi concentro sulla creazione di interfacce intuitive e piacevoli, garantendo che i visitatori abbiano un'esperienza fluida e soddisfacente."
+      }
+    }
+  },
+  "section3": {
+    "intro": "Ciao, sono Luiz Ricardo, Programmatore WEB specializzato nella creazione di esperienze digitali uniche per far crescere la tua attività! A differenza di molti designer che utilizzano modelli pronti, sviluppo ogni sito da zero, 100% personalizzato per riflettere l'identità e gli obiettivi del tuo marchio.",
+    "whyMe": "Perché scegliere il mio servizio?",
+    "reasons": "Perché avrai un sito che si distingue dalla concorrenza, completamente ottimizzato e responsive, su misura per aumentare le tue vendite online!",
+    "limited": "Posti Limitati: Solo 2 Progetti Mensili!",
+    "limitedDesc": "Assicurati il tuo posto ora e investi in una presenza online ad alto impatto che converte davvero!",
+    "contact": "Mettiti in contatto"
+  },
+  "section4": {
+    "title": "Scegli il Piano Perfetto per il Successo del Tuo Sito Web",
+    "plans": {
+      "maintenance": {
+        "name": "Manutenzione Annuale",
+        "desc": "Mantieni il tuo sito sempre online, sicuro e aggiornato. Perfetto per chi ha già un sito e valorizza la stabilità e le prestazioni continue senza problemi tecnici.",
+        "price": "Preventivo Personalizzato",
+        "cash": "Consulta per i dettagli",
+        "button": "Richiedi Preventivo"
+      },
+      "pro": {
+        "name": "Sito PRO",
+        "desc": "Un sito web completo e ad alte prestazioni ottimizzato per le conversioni. Ideale per professionisti e aziende che desiderano distinguersi sul mercato con una soluzione su misura.",
+        "price": "Preventivo Personalizzato",
+        "cash": "Consulta per i dettagli",
+        "button": "Voglio questo piano"
+      },
+      "institutional": {
+        "name": "Sito Istituzionale",
+        "desc": "Una struttura robusta multi-pagina per aziende complesse. Include funnel profondi, multiple sezioni e posizionamento completo del marchio per vendite high-ticket.",
+        "price": "Preventivo Personalizzato",
+        "cash": "Consulta per i dettagli",
+        "button": "Verifica disponibilità"
+      }
+    },
+    "form": {
+      "title": "Compila il modulo sottostante",
+      "name": "Il tuo nome:",
+      "email": "La tua migliore email:",
+      "whatsapp": "WhatsApp:",
+      "submit": "Assicura il mio posto"
+    }
+  },
+  "section5": {
+    "title": "Scopri alcuni progetti che ho sviluppato",
+    "projects": {
+      "neon": "Progetto NEON",
+      "lp": "Progetto Landing Page",
+      "blizzard": "Progetto Blizzard",
+      "wireframe": "Progetto Wireframe"
+    }
+  },
+  "section6": {
+    "title": "Domande Frequenti",
+    "questions": [
+      {
+        "q": "Qual è il tuo vantaggio rispetto agli altri?",
+        "a": "Come sviluppatore, creo siti web veri, tutto in codice! Di solito, altri professionisti che creano siti non sono programmatori; usano solo programmi in stile 'trascina e rilascia', e il programma genera il codice automaticamente. Qual è il problema? Limitazioni! Se vuoi qualcosa di personalizzato, non lo avrai. Se vuoi un effetto di movimento, non lo avrai. E molte altre limitazioni.\n\nInoltre, ho lavorato in grandi aziende, dove ho acquisito vasta esperienza e competenze avanzate nello sviluppo web. Questo background mi consente di offrire soluzioni di alta qualità e personalizzate per ogni cliente."
+      },
+      {
+        "q": "Qual è la differenza tra i piani?",
+        "a": "Manutenzione è per chi ha già un sito e deve apportare piccole modifiche.\nSito Pro è per chi vuole avere un sito professionale.\nSito istituzionale è un sito con più pagine, perfetto per chi ha bisogno di diverse sezioni e reindirizzamenti, ideale per creare funnel di vendita."
+      },
+      {
+        "q": "Quale piano dovrei scegliere?",
+        "a": "Se sei un professionista legale, medico, dentista o lavori in qualsiasi altra area come freelance, il Sito Pro è per te. Ma se hai bisogno di un sito che porta ad altre pagine e consente schemi di vendita avanzati, come per il marketing digitale, il Sito Istituzionale è la scelta ideale."
+      },
+      {
+        "q": "Come viene creato il sito?",
+        "a": "I siti web richiedono del tempo per essere creati perché devo sapere come vuoi il sito per poterlo personalizzare secondo i tuoi gusti. Quindi, creo una bozza del sito in modo che tu possa vedere come apparirà completo prima ancora che venga codificato, come se fosse una foto del tuo sito già pronto, ma sarà solo un'immagine. Poi, inizierò a programmare da zero fino al progetto finale."
+      }
+    ],
+    "footer": {
+      "title": "Mettiti in contatto",
+      "desc": "Hai domande o hai bisogno di aiuto con il tuo acquisto? Contattami ora e risolvi tutte le tue domande rapidamente!",
+      "button": "Mettiti in contatto"
+    }
+  },
+  "thanks": {
+    "title": "Grazie per il tuo contatto!",
+    "desc": "Clicca il pulsante qui sotto e parla direttamente con me su WhatsApp. Il tuo successo è a solo un clic di distanza!",
+    "button": "Mettiti in contatto",
+    "whatsappLink": "https://wa.me/5574988723538?text=Ciao%20Luiz!%20Sono%20interessato%20a%20creare%20un%20sito%20web.%20Possiamo%20parlare%20di%20pi%C3%B9%20del%20mio%20progetto?"
+  }
+}

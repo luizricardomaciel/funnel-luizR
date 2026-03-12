@@ -1,0 +1,119 @@
+{
+  "seo": {
+    "title": "Transformez Votre Entreprise avec des Sites Web Haute Performance !",
+    "description": "Web designer spécialisé dans des sites modernes et fonctionnels. Augmentez votre visibilité en ligne, conquérez plus de clients et transformez votre entreprise. Cliquez ici et découvrez-en plus !"
+  },
+  "header": {
+    "home": "Accueil",
+    "howItWorks": "Comment ça marche",
+    "faq": "FAQ",
+    "contact": "Contactez-moi",
+    "hireNow": "Engager maintenant",
+    "aboutMe": "À propos de moi"
+  },
+  "section1": {
+    "title": "Transformez votre entreprise avec un site web professionnel de haute qualité !",
+    "description": "Profitez de cette opportunité unique et engagez mes services de développement web pour propulser votre présence en ligne vers de nouveaux sommets. Contactez-moi maintenant et obtenez votre site web exclusif !",
+    "button": "Engager Maintenant"
+  },
+  "section2": {
+    "title": "Qu'est-ce qui fait que mes sites se démarquent et sont d'un autre niveau ?",
+    "projectsButton": "Voir les projets",
+    "features": {
+      "tailored": {
+        "title": "Développement Sur Mesure",
+        "description": "Contrairement à beaucoup qui utilisent des modèles prêts à l'emploi et ne sont pas de véritables développeurs, je crée votre site à partir de zéro, reflétant l'essence de votre entreprise et garantissant un résultat unique et personnalisé."
+      },
+      "seo": {
+        "title": "SEO Avancé",
+        "description": "J'utilise des techniques avancées de SEO (Search Engine Optimization) dans le code pour garantir que chaque site soit optimisé et aligné sur les meilleures pratiques du marché."
+      },
+      "ux": {
+        "title": "Expérience Utilisateur",
+        "description": "Je me concentre sur la création d'interfaces intuitives et agréables, garantissant que les visiteurs aient une expérience fluide et satisfaisante."
+      }
+    }
+  },
+  "section3": {
+    "intro": "Bonjour, je suis Luiz Ricardo, Programmeur WEB spécialisé dans la création d'expériences numériques uniques pour propulser votre entreprise ! Contrairement à de nombreux designers qui utilisent des modèles prêts à l'emploi, je développe chaque site à partir de zéro, 100% personnalisé pour refléter l'identité et les objectifs de votre marque.",
+    "whyMe": "Pourquoi choisir mon service ?",
+    "reasons": "Parce que vous aurez un site qui se démarque de la concurrence, entièrement optimisé et responsive, conçu pour augmenter vos ventes en ligne !",
+    "limited": "Places Limitées : Seulement 2 Projets Mensuels !",
+    "limitedDesc": "Réservez votre place maintenant et investissez dans une présence en ligne à fort impact qui convertit vraiment !",
+    "contact": "Prendre contact"
+  },
+  "section4": {
+    "title": "Choisissez le Plan Parfait pour le Succès de Votre Site Web",
+    "plans": {
+      "maintenance": {
+        "name": "Maintenance Annuelle",
+        "desc": "Gardez votre site toujours en ligne, sécurisé et à jour. Parfait pour ceux qui ont déjà un site et valorisent la stabilité et les performances continues sans tracas techniques.",
+        "price": "Devis Personnalisé",
+        "cash": "Consultez pour les détails",
+        "button": "Demander un Devis"
+      },
+      "pro": {
+        "name": "Site PRO",
+        "desc": "Un site web complet et haute performance optimisé pour les conversions. Idéal pour les professionnels et entreprises qui souhaitent se démarquer sur le marché avec une solution sur mesure.",
+        "price": "Devis Personnalisé",
+        "cash": "Consultez pour les détails",
+        "button": "Je veux ce plan"
+      },
+      "institutional": {
+        "name": "Site Institutionnel",
+        "desc": "Une structure robuste multi-pages pour les entreprises complexes. Comprend des entonnoirs profonds, plusieurs sections et un positionnement complet de la marque pour les ventes high-ticket.",
+        "price": "Devis Personnalisé",
+        "cash": "Consultez pour les détails",
+        "button": "Vérifier la disponibilité"
+      }
+    },
+    "form": {
+      "title": "Remplissez le formulaire ci-dessous",
+      "name": "Votre nom :",
+      "email": "Votre meilleur e-mail :",
+      "whatsapp": "WhatsApp :",
+      "submit": "Réserver ma place"
+    }
+  },
+  "section5": {
+    "title": "Découvrez quelques projets que j'ai développés",
+    "projects": {
+      "neon": "Projet NEON",
+      "lp": "Projet Landing Page",
+      "blizzard": "Projet Blizzard",
+      "wireframe": "Projet Wireframe"
+    }
+  },
+  "section6": {
+    "title": "Foire Aux Questions",
+    "questions": [
+      {
+        "q": "Quel est votre avantage par rapport aux autres ?",
+        "a": "En tant que développeur, je crée de vrais sites web, tout en code ! Habituellement, les autres professionnels qui créent des sites ne sont pas des programmeurs ; ils utilisent simplement des programmes de type 'glisser-déposer', et le programme génère le code automatiquement. Quel est le problème ? Les limitations ! Si vous voulez quelque chose de personnalisé, vous ne l'aurez pas. Si vous voulez un effet de mouvement, vous ne l'aurez pas. Et beaucoup d'autres limitations.\n\nDe plus, j'ai travaillé dans de grandes entreprises, où j'ai acquis une vaste expérience et des compétences avancées en développement web. Cette expérience me permet d'offrir des solutions de haute qualité et personnalisées pour chaque client."
+      },
+      {
+        "q": "Quelle est la différence entre les plans ?",
+        "a": "Maintenance est pour ceux qui ont déjà un site et doivent faire de petites modifications.\nSite Pro est pour ceux qui veulent avoir un site professionnel.\nSite Institutionnel est un site avec plusieurs pages, parfait pour ceux qui ont besoin de différentes sections et redirections, idéal pour créer des entonnoirs de vente."
+      },
+      {
+        "q": "Quel plan dois-je choisir ?",
+        "a": "Si vous êtes un professionnel du droit, médecin, dentiste ou travaillez dans tout autre domaine en tant que freelance, Site Pro est pour vous. Mais si vous avez besoin d'un site qui mène à d'autres pages et permet des schémas de vente avancés, comme pour le marketing digital, le Site Institutionnel est le choix idéal."
+      },
+      {
+        "q": "Comment le site est-il créé ?",
+        "a": "Les sites web prennent un certain temps à être créés car j'ai besoin de savoir comment vous voulez votre site pour pouvoir le personnaliser à votre goût. Donc, je crée une ébauche du site pour que vous puissiez voir à quoi il ressemblera complet avant même qu'il ne soit codé, comme si c'était une photo de votre site terminé, mais ce sera juste une image. Ensuite, je commencerai à programmer à partir de zéro jusqu'au projet final."
+      }
+    ],
+    "footer": {
+      "title": "Prendre contact",
+      "desc": "Vous avez des questions ou besoin d'aide pour votre achat ? Contactez-moi maintenant et résolvez toutes vos questions rapidement !",
+      "button": "Prendre contact"
+    }
+  },
+  "thanks": {
+    "title": "Merci pour votre contact !",
+    "desc": "Cliquez sur le bouton ci-dessous et parlez directement avec moi sur WhatsApp. Votre succès n'est qu'à un clic de distance !",
+    "button": "Prendre contact",
+    "whatsappLink": "https://wa.me/5574988723538?text=Bonjour%20Luiz!%20Je%20suis%20int%C3%A9ress%C3%A9%20par%20la%20cr%C3%A9ation%20d'un%20site%20web.%20Pouvons-nous%20discuter%20de%20mon%20projet?"
+  }
+}
