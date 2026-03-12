@@ -1,4 +1,3 @@
-
 import style from "./Section2Styles.module.css";
 import engrenagem from "../../assets/engrenagem-icon.svg";
 import graphic from "../../assets/grafico-icon.svg";
@@ -11,11 +10,12 @@ import TechnicalButton from "../section1/TechnicalButton";
 function Section2() {
   const { t } = useTranslation();
 
-  const scrollToSection = (id) => {
-    event.preventDefault();
+  // AGORA RECEBE O EVENTO E PREVINE O REFRESH CORRETAMENTE
+  const scrollToSection = (e, id) => {
+    if (e) e.preventDefault();
     document
       .getElementById(id)
-      .scrollIntoView({ block: "start", behavior: "smooth" });
+      ?.scrollIntoView({ block: "start", behavior: "smooth" });
   };
 
   return (
@@ -30,7 +30,7 @@ function Section2() {
             <Swiper />
             <div className={style.btnWrapper}>
               <TechnicalButton
-                onClick={() => scrollToSection("section5")}
+                onClick={(e) => scrollToSection(e, "section5")}
               >
                 {t("section2.projectsButton")}
               </TechnicalButton>

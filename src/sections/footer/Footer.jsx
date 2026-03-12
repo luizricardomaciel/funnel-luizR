@@ -1,15 +1,15 @@
-
 import styles from "./Footer.module.css";
 import { useTranslation } from "react-i18next";
 
 function Footer() {
   const { t } = useTranslation();
 
-  const scrollToSection = (id) => {
-    event.preventDefault();
+  // AGORA RECEBE O EVENTO E PREVINE O REFRESH
+  const scrollToSection = (e, id) => {
+    if (e) e.preventDefault();
     document
       .getElementById(id)
-      .scrollIntoView({ block: "start", behavior: "smooth" });
+      ?.scrollIntoView({ block: "start", behavior: "smooth" });
   };
 
   return (
@@ -26,27 +26,27 @@ function Footer() {
           <nav>
             <ul>
               <li>
-                <a href="" onClick={() => scrollToSection("header")}>
+                <a href="" onClick={(e) => scrollToSection(e, "header")}>
                   {t("header.home")}
                 </a>
               </li>
               <li>
-                <a href="" onClick={() => scrollToSection("section2")}>
+                <a href="" onClick={(e) => scrollToSection(e, "section2")}>
                   {t("header.howItWorks")}
                 </a>
               </li>
               <li>
-                <a href="" onClick={() => scrollToSection("section5")}>
+                <a href="" onClick={(e) => scrollToSection(e, "section5")}>
                   {t("section5.title").split(" ")[0]}
                 </a>
               </li>
               <li>
-                <a href="" onClick={() => scrollToSection("section3")}>
+                <a href="" onClick={(e) => scrollToSection(e, "section3")}>
                   {t("header.aboutMe")}
                 </a>
               </li>
               <li>
-                <a href="" onClick={() => scrollToSection("section4")}>
+                <a href="" onClick={(e) => scrollToSection(e, "section4")}>
                   {t("header.hireNow")}
                 </a>
               </li>

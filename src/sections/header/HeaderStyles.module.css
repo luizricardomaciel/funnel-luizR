@@ -40,32 +40,82 @@ header {
   }
 }
 
+/* --- MENU HAMBURGUER SIMÉTRICO --- */
 .mobileMenu {
   cursor: pointer;
   display: none;
   position: absolute;
   right: 15px;
-  top: 2vh;
-  z-index: 3;
-  div {
-    width: 32px;
-    height: 2px;
-    background: #fff;
-    margin: 8px;
+  top: 50%;
+  margin-top: -10px;
+  z-index: 1001;
+  width: 32px;
+  height: 20px;
+}
 
-    transition: 0.3s;
-  }
-  &.active {
-    .line1 {
-      transform: rotate(-45deg) translate(-8px, 8px);
-    }
-    .line2 {
-      opacity: 0;
-    }
-    .line3 {
-      transform: rotate(45deg) translate(-5px, -7px);
-    }
-  }
+.mobileMenu div {
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  margin: 0 !important;
+  border-radius: 2px;
+}
+
+.line1 {
+  top: 0;
+}
+
+.line2 {
+  top: 50%;
+  margin-top: -1px;
+}
+
+.line3 {
+  bottom: 0;
+}
+
+.mobileMenu.active .line1 {
+  top: 50%;
+  margin-top: -1px;
+  transform: rotate(45deg);
+}
+
+.mobileMenu.active .line2 {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+.mobileMenu.active .line3 {
+  bottom: 50%;
+  margin-bottom: -1px;
+  transform: rotate(-45deg);
+}
+
+/* --- FONTES DOS SELETORES DE IDIOMAS --- */
+.langButton, 
+.langDropdown button,
+.langButtonMobile,
+.langDropdownMobile button {
+  font-family: 'Space Grotesk', sans-serif !important; 
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: 0.5px;
+}
+
+.langDropdown button {
+  font-size: 1.4rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 12px;
+}
+
+.langDropdown button span {
+  font-family: inherit;
 }
 
 .langSelector {
@@ -83,10 +133,10 @@ header {
   border-radius: 8px;
   display: flex;
   align-items: center;
-  gap: 10px;
   color: white;
-  font-family: "Space Grotesk", sans-serif;
-  font-size: 0.95rem;
+  font-size: 1.3rem; 
+  text-transform: none;
+  gap: 8px;
 
   img {
     width: 24px;
@@ -123,9 +173,9 @@ header {
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
   padding: 8px;
-  min-width: 160px;
+  min-width: 180px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
-  z-index: 100;
+  z-index: 1100;
   animation: dropdownSlide 0.2s ease;
 
   @keyframes dropdownSlide {
@@ -149,8 +199,7 @@ header {
     padding: 10px 12px;
     border-radius: 8px;
     color: white;
-    font-family: "Space Grotesk", sans-serif;
-    font-size: 0.9rem;
+    font-size: 1.4rem;
     cursor: pointer;
     transition: all 0.2s ease;
     text-align: left;
@@ -179,21 +228,20 @@ header {
   .langButtonMobile {
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 12px 16px;
+    padding: 14px 20px; 
     border-radius: 12px;
     display: flex;
     align-items: center;
     gap: 12px;
     color: white;
-    font-family: "Space Grotesk", sans-serif;
-    font-size: 1rem;
+    font-size: 1.6rem; 
     cursor: pointer;
     transition: all 0.3s ease;
     width: 100%;
     justify-content: space-between;
 
     img {
-      width: 28px;
+      width: 32px; 
       height: auto;
       border-radius: 4px;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
@@ -219,17 +267,16 @@ header {
       width: 100%;
       background: transparent;
       border: none;
-      padding: 12px 16px;
+      padding: 14px 20px; 
       border-radius: 8px;
       color: white;
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 1rem;
+      font-size: 1.5rem; 
       cursor: pointer;
       transition: all 0.2s ease;
       text-align: left;
 
       img {
-        width: 28px;
+        width: 32px; 
         height: auto;
         border-radius: 4px;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
@@ -266,7 +313,7 @@ ul {
   }
 
   a {
-    font-family: "Space Grotesk", serif;
+    font-family: "Space Grotesk", sans-serif;
     font-size: clamp(1.4rem, 3vw, 1.5rem);
     transition: 0.3s;
     touch-action: manipulation;
@@ -378,13 +425,8 @@ a {
   .mobileMenu {
     display: block;
     touch-action: manipulation;
-    
-    div {
-      width: clamp(28px, 6vw, 32px);
-      height: 2px;
-      background: #fff;
-      margin: clamp(6px, 1.5vw, 8px);
-      transition: 0.3s;
-    }
+  }
+  .mobileMenu div {
+    width: clamp(28px, 6vw, 32px);
   }
 }

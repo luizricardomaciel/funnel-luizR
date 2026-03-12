@@ -164,3 +164,20 @@ p {
     max-width: 320px;
   }
 }
+
+.noScroll {
+  overflow: hidden !important;
+  height: 100vh !important;
+  width: 100vw !important;
+  position: fixed; /* Isso garante o bloqueio em iOS Safari */
+}
+
+button, input, select, textarea {
+  font-family: 'Outfit', 'Space Grotesk', sans-serif;
+}
+
+/* Garante que o seletor de linguagem mobile (se estiver aberto) 
+   não seja cortado pelo overflow hidden do body */
+.noScroll .langDropdownMobile {
+  pointer-events: all;
+}

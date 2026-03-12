@@ -4,10 +4,12 @@ import AnimatedElement from "../AnimatedElement";
 import cell from "../../assets/celular-funnil 1.png";
 import TechnicalButton from "./TechnicalButton";
 
-const scrollToSection = (id) => {
+// PREVINE O REFRESH COM EVENTO GLOBAL CASO PRECISE, MAS É MELHOR RECEBER O "e"
+const scrollToSection = (e, id) => {
+  if (e) e.preventDefault();
   document
     .getElementById(id)
-    .scrollIntoView({ block: "start", behavior: "smooth" });
+    ?.scrollIntoView({ block: "start", behavior: "smooth" });
 };
 
 function Section1() {
@@ -23,7 +25,7 @@ function Section1() {
           <p>{t("section1.description")}</p>
           
           <div style={{ width: 'fit-content' }}>
-            <TechnicalButton onClick={() => scrollToSection("section4")}>
+            <TechnicalButton onClick={(e) => scrollToSection(e, "section4")}>
               {t("section1.button")}
             </TechnicalButton>
           </div>

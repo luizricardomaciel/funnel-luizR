@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import styles from "./HeaderStyles.module.css";
 import { useTranslation } from "react-i18next";
 
@@ -14,31 +14,51 @@ function Header() {
   const { t, i18n } = useTranslation();
   const [menuOpen, setMenuOpen] = useState(false);
   const [langSelectorOpen, setLangSelectorOpen] = useState(false);
+  
+  // Refs para detectar cliques fora dos seletores de idioma
+  const langSelectorRef = useRef(null);
+  const langMobileRef = useRef(null);
 
   const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-    if (!menuOpen) {
-      document.body.classList.add("noScroll");
+    const newMenuState = !menuOpen;
+    setMenuOpen(newMenuState);
+    
+    if (newMenuState) {
+      document.documentElement.style.overflow = "hidden";
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.classList.remove("noScroll");
+      document.documentElement.style.overflow = "auto";
+      document.body.style.overflow = "auto";
     }
   };
 
   const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
-    const url = new URL(window.location);
-    url.searchParams.set("lang", lng);
-    window.history.replaceState({}, "", url);
-    setLangSelectorOpen(false);
+    i18n.changeLanguage(lng).then(() => {
+      // Fecha o seletor de idioma
+      setLangSelectorOpen(false);
+      
+      // Fecha o menu principal mobile e libera o scroll
+      setMenuOpen(false);
+      document.documentElement.style.overflow = "auto";
+      document.body.style.overflow = "auto";
+      
+      // Atualiza a URL
+      const url = new URL(window.location);
+      url.searchParams.set("lang", lng);
+      window.history.replaceState({}, "", url);
+    });
   };
 
-  const currentLang = languages.find(lang => lang.code === i18n.language) || languages[0];
+  // Encontra a linguagem ativa
+  const currentLang = languages.find(lang => i18n.language && i18n.language.startsWith(lang.code)) || languages[0];
 
-  // Close language selector when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
-      const langSelector = document.querySelector(`.${styles.langSelector}`);
-      if (langSelector && !langSelector.contains(event.target)) {
+      // Verifica se o clique foi fora do seletor desktop E fora do seletor mobile
+      const clickedOutsideDesktop = langSelectorRef.current && !langSelectorRef.current.contains(event.target);
+      const clickedOutsideMobile = langMobileRef.current && !langMobileRef.current.contains(event.target);
+
+      if (clickedOutsideDesktop && clickedOutsideMobile) {
         setLangSelectorOpen(false);
       }
     };
@@ -51,17 +71,21 @@ function Header() {
 
   const scrollToSection = (id) => {
     event.preventDefault();
-    document
-      .getElementById(id)
-      .scrollIntoView({ block: "start", behavior: "smooth" });
-    document.body.classList.remove("noScroll");
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ block: "start", behavior: "smooth" });
+    }
+    
+    // Ao clicar em um link, fecha o menu e restaura o scroll
+    document.documentElement.style.overflow = "auto";
+    document.body.style.overflow = "auto";
     setMenuOpen(false);
   };
 
   return (
     <header id="header">
       <div className={styles.container}>
-        <a href="#" className={styles.logo}>
+        <a href="#" className={styles.logo} onClick={(e) => { e.preventDefault(); scrollToSection("header"); }}>
           <h2>
             Luiz <br /> Ricardo.
           </h2>
@@ -81,10 +105,15 @@ function Header() {
                 Luiz <br /> Ricardo.
               </h1>
             </li>
-            <div className={styles.langSelector}>
+            
+            {/* Seletor de Idioma Desktop */}
+            <div className={styles.langSelector} ref={langSelectorRef}>
               <button
                 className={styles.langButton}
-                onClick={() => setLangSelectorOpen(!langSelectorOpen)}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setLangSelectorOpen(!langSelectorOpen);
+                }}
               >
                 <img src={currentLang.flag} alt={currentLang.name} />
                 <span>{currentLang.name}</span>
@@ -119,41 +148,48 @@ function Header() {
                 </div>
               )}
             </div>
+
             <li>
               <a
-                href=""
-                className={` ${menuOpen ? "" : ""}`}
+                href="#section2"
                 onClick={() => scrollToSection("section2")}
               >
                 {t("header.howItWorks")}
               </a>
             </li>
             <li>
-              <a href="" onClick={() => scrollToSection("section6")}>
+              <a href="#section6" onClick={() => scrollToSection("section6")}>
                 {t("header.faq")}
               </a>
             </li>
             <li>
-              <a href="" onClick={() => scrollToSection("section3")}>
+              <a href="#section3" onClick={() => scrollToSection("section3")}>
                 {t("header.aboutMe")}
               </a>
             </li>
             <li>
               <a
-                href=""
+                href="#section4"
                 onClick={() => scrollToSection("section4")}
                 className={`btn-primary ${styles.actionMobile}`}
               >
                 {t("header.hireNow")}
               </a>
             </li>
-            <div className={styles.langMobile}>
+
+            {/* Seletor de Idioma Mobile */}
+            <div className={styles.langMobile} ref={langMobileRef}>
               <button
                 className={styles.langButtonMobile}
-                onClick={() => setLangSelectorOpen(!langSelectorOpen)}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setLangSelectorOpen(!langSelectorOpen);
+                }}
               >
-                <img src={currentLang.flag} alt={currentLang.name} />
-                <span>{currentLang.name}</span>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                  <img src={currentLang.flag} alt={currentLang.name} />
+                  <span>{currentLang.name}</span>
+                </div>
                 <svg
                   className={`${styles.arrowIcon} ${langSelectorOpen ? styles.arrowOpen : ""}`}
                   width="12"
