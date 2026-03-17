@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next";
 
 import Form from "./Form/Form";
 import TechnicalButton from "../section1/TechnicalButton";
+import GlowButton from "../../components/GlowButton/GlowButton";
 
 function Section4() {
   const { t } = useTranslation();
@@ -13,7 +14,7 @@ function Section4() {
   const plans = ["maintenance", "pro", "institutional"];
 
   return (
-    <section id="section4">
+    <section id="section4" className={styles.sectionSection}>
       <AnimatedElement />
       <div className={styles.container}>
         <h2 data-aos="fade-left">{t("section4.title")}</h2>
@@ -31,9 +32,15 @@ function Section4() {
                     <p>{t(`section4.plans.${id}.cash`)}</p>
                   </div>
                   <div style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
-                    <TechnicalButton onClick={() => setForm(true)}>
-                      {t(`section4.plans.${id}.button`)}
-                    </TechnicalButton>
+                    {id === 'pro' ? (
+                      <GlowButton onClick={() => setForm(true)}>
+                        {t(`section4.plans.${id}.button`)}
+                      </GlowButton>
+                    ) : (
+                      <TechnicalButton onClick={() => setForm(true)}>
+                        {t(`section4.plans.${id}.button`)}
+                      </TechnicalButton>
+                    )}
                   </div>
                 </div>
               </div>

@@ -11,7 +11,7 @@ function Section5() {
   const { t } = useTranslation();
 
   return (
-    <section id="section5">
+    <section id="section5" className={styles.sectionSection}>
       <AnimatedElement />
       <div className={styles.container}>
         <div data-aos="fade-left">

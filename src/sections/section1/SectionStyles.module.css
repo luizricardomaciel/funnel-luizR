@@ -1,8 +1,10 @@
 .section01 {
-  background: radial-gradient(circle at 10% 20%, rgba(255, 0, 34, 0.05) 0%, transparent 40%),
-              radial-gradient(circle at 90% 80%, rgba(255, 117, 9, 0.05) 0%, transparent 40%);
+  background: radial-gradient(circle at 20% 30%, rgba(255, 0, 34, 0.15) 0%, transparent 50%),
+              radial-gradient(circle at 80% 70%, rgba(255, 117, 9, 0.15) 0%, transparent 50%);
   position: relative;
   overflow: hidden;
+  margin-top: -9rem; /* Puxa para trás do header */
+  padding-top: 9rem; /* Mantém o conteúdo visível */
 }
 
 .container {
@@ -13,9 +15,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 180px;
+  padding-top: clamp(12rem, 15vw, 18rem);
   padding-bottom: 100px;
-  min-height: 90vh;
+  min-height: 100vh;
 }
 
 .badge {
@@ -25,6 +27,12 @@
   border: 1px solid rgba(255, 117, 9, 0.3);
   border-radius: 50px;
   margin-bottom: 2rem;
+  animation: floatBadge 4s ease-in-out infinite;
+}
+
+@keyframes floatBadge {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
 }
 
 .badge span {
@@ -106,6 +114,21 @@
 
 @keyframes shine {
   to { background-position: 200% center; }
+}
+
+.ctaWrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .ctaWrapper {
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 /* Technical Button (Uiverse Style Refinado) */

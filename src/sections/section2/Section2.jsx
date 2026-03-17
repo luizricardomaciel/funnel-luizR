@@ -19,7 +19,7 @@ function Section2() {
   };
 
   return (
-    <section id="section2">
+    <section id="section2" className={style.sectionSection}>
       <AnimatedElement />
       <div className={style.container}>
         <div className={style.text} data-aos="fade-right">

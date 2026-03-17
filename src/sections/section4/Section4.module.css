@@ -1,42 +1,47 @@
+.sectionSection {
+  position: relative;
+  overflow: hidden;
+  background: radial-gradient(circle at 0% 100%, rgba(255, 0, 34, 0.05), transparent 50%);
+}
+
 .container {
   width: 100%;
   max-width: 1246px;
-  padding: clamp(8rem, 12vw, 15rem) 20px;
+  padding: clamp(10rem, 15vw, 18rem) 20px;
   margin: 0 auto;
   position: relative;
-  background: radial-gradient(circle at 50% 50%, rgba(255, 117, 9, 0.05) 0%, transparent 70%);
+}
 
-  /* Background Glow Orbs */
-  &::before, &::after {
-    content: '';
-    position: absolute;
-    width: 40rem;
-    height: 40rem;
-    border-radius: 50%;
-    background: radial-gradient(circle, rgba(255, 0, 34, 0.1), transparent 70%);
-    filter: blur(100px);
-    z-index: -1;
-    animation: pulse 10s ease-in-out infinite alternate;
-  }
+/* Background Glow Orbs */
+.container::before, .container::after {
+  content: '';
+  position: absolute;
+  width: 40rem;
+  height: 40rem;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 0, 34, 0.1), transparent 70%);
+  filter: blur(100px);
+  z-index: -1;
+  animation: pulse 10s ease-in-out infinite alternate;
+}
 
-  &::before { top: 0; left: 0; }
-  &::after { bottom: 0; right: 0; background: radial-gradient(circle, rgba(255, 117, 9, 0.1), transparent 70%); }
+.container::before { top: 0; left: 0; }
+.container::after { bottom: 0; right: 0; background: radial-gradient(circle, rgba(255, 117, 9, 0.1), transparent 70%); }
 
-  h2 {
-    text-align: center;
-    max-width: 80rem;
-    margin: 0 auto;
-    font-size: clamp(3.6rem, 7.5vw, 6.4rem);
-    background: linear-gradient(to right, #fff 20%, #ff7509 50%, #fff 80%);
-    background-size: 200% auto;
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    animation: shine 5s linear infinite;
-    margin-bottom: 2rem;
-    line-height: 1.15;
-    letter-spacing: -0.01em;
-  }
+.container h2 {
+  text-align: center;
+  max-width: 80rem;
+  margin: 0 auto;
+  font-size: clamp(3.6rem, 7.5vw, 6.4rem);
+  background: linear-gradient(to right, #fff 20%, #ff7509 50%, #fff 80%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shine 5s linear infinite;
+  margin-bottom: 2rem;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
 }
 
 @keyframes shine {
@@ -59,19 +64,17 @@
 }
 
 /* Effects for "Pro" or "Highlight" Card */
-.proCard {
-  &::after {
-    content: '';
-    position: absolute;
-    inset: -2px;
-    background: linear-gradient(90deg, #ff0022, #ff7509, #ff0022);
-    background-size: 200% 200%;
-    z-index: -1;
-    border-radius: 4.2rem;
-    animation: borderRotate 3s linear infinite;
-    opacity: 0.6;
-    filter: blur(8px);
-  }
+.proCard::after {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  background: linear-gradient(90deg, #ff0022, #ff7509, #ff0022);
+  background-size: 200% 200%;
+  z-index: -1;
+  border-radius: 4.2rem;
+  animation: borderRotate 3s linear infinite;
+  opacity: 0.6;
+  filter: blur(8px);
 }
 
 @keyframes borderRotate {
@@ -91,136 +94,129 @@
   border: 1px solid rgba(255, 255, 255, 0.05);
   position: relative;
   box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
 
-  /* Inner Light Sweep Effect */
-  &::before {
-    content: '';
-    position: absolute;
-    top: -100%;
-    left: -100%;
-    width: 300%;
-    height: 300%;
-    background: radial-gradient(circle at center, rgba(255, 255, 255, 0.05) 0%, transparent 20%);
-    transition: 0.5s;
-    pointer-events: none;
-    z-index: 1;
-  }
+/* Inner Light Sweep Effect */
+.card::before {
+  content: '';
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  width: 300%;
+  height: 300%;
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.05) 0%, transparent 20%);
+  transition: 0.5s;
+  pointer-events: none;
+  z-index: 1;
+}
 
-  .title {
-    padding: clamp(4rem, 6vw, 6rem) 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: rgba(255, 255, 255, 0.02);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
-    position: relative;
-    overflow: hidden;
+.card .title {
+  padding: clamp(4rem, 6vw, 6rem) 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.02);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+  position: relative;
+  overflow: hidden;
+}
 
-    p {
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: clamp(2.6rem, 5.5vw, 3rem);
-      font-weight: 700;
-      color: white;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      margin: 0;
-      z-index: 2;
-    }
+.card .title p {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(2.6rem, 5.5vw, 3rem);
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0;
+  z-index: 2;
+}
 
-    &.titleClick {
-      background: var(--primary-gradient);
-      box-shadow: 0 15px 35px rgba(255, 0, 34, 0.4);
-      &::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: -100%;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
-        animation: sweep 4s infinite;
-      }
-    }
-  }
+.card .title.titleClick {
+  background: var(--primary-gradient);
+  box-shadow: 0 15px 35px rgba(255, 0, 34, 0.4);
+}
 
-  .bot {
-    padding: clamp(3rem, 5vw, 5rem) clamp(2rem, 4vw, 3.5rem);
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: clamp(2.4rem, 5vw, 4rem);
-    z-index: 2;
+.card .title.titleClick::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+  animation: sweep 4s infinite;
+}
 
-    p {
-      color: #aaa;
-      font-size: clamp(1.6rem, 4vw, 1.8rem);
-      line-height: 1.8;
-      font-weight: 400;
-      min-height: 12rem;
-      margin: 0;
-    }
+.card .bot {
+  padding: clamp(3rem, 5vw, 5rem) clamp(2rem, 4vw, 3.5rem);
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: clamp(2.4rem, 5vw, 4rem);
+  z-index: 2;
+}
 
-    .value {
-      width: 100%;
-      background: rgba(255, 255, 255, 0.03);
-      padding: clamp(2.4rem, 4vw, 4rem) clamp(1.6rem, 3vw, 2.4rem);
-      border-radius: clamp(2rem, 4vw, 3rem);
-      margin-top: auto;
-      border: 1px solid rgba(255, 255, 255, 0.05);
-      position: relative;
-      overflow: hidden;
+.card .bot p {
+  color: #aaa;
+  font-size: clamp(1.6rem, 4vw, 1.8rem);
+  line-height: 1.8;
+  font-weight: 400;
+  min-height: 12rem;
+  margin: 0;
+}
 
-      h3 {
-        font-size: clamp(2.4rem, 5.5vw, 2.8rem);
-        color: white;
-        margin-bottom: 0.8rem;
-        font-weight: 700;
-      }
+.card .bot .value {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.03);
+  padding: clamp(2.4rem, 4vw, 4rem) clamp(1.6rem, 3vw, 2.4rem);
+  border-radius: clamp(2rem, 4vw, 3rem);
+  margin-top: auto;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  position: relative;
+  overflow: hidden;
+}
 
-      p {
-        font-size: clamp(1.2rem, 2.5vw, 1.4rem);
-        min-height: auto;
-        color: #777;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        font-weight: 700;
-      }
-    }
+.card .bot .value h3 {
+  font-size: clamp(2.4rem, 5.5vw, 2.8rem);
+  color: white;
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+}
 
-    button {
-      width: 100%;
-      max-width: 30rem;
-      height: 6rem;
-      font-size: 1.8rem;
-      letter-spacing: 0.5px;
-    }
-  }
+.card .bot .value p {
+  font-size: clamp(1.2rem, 2.5vw, 1.4rem);
+  min-height: auto;
+  color: #777;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
 
-  &:hover {
-    transform: translateY(-25px) scale(1.02);
-    border-color: rgba(255, 117, 9, 0.3);
-    box-shadow: 0 40px 100px rgba(0, 0, 0, 0.7);
-    background: #03142d;
+.card:hover {
+  transform: translateY(-25px) scale(1.02);
+  border-color: rgba(255, 117, 9, 0.3);
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.7);
+  background: #03142d;
+}
 
-    &::before {
-      top: -50%;
-      left: -50%;
-    }
+.card:hover::before {
+  top: -50%;
+  left: -50%;
+}
 
-    .title p {
-      transform: scale(1.1);
-      transition: 0.5s;
-    }
+.card:hover .title p {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
 
-    .value {
-      background: rgba(255, 255, 255, 0.05);
-      border-color: rgba(255, 117, 9, 0.2);
-      transform: translateY(-5px);
-    }
-  }
+.card:hover .value {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 117, 9, 0.2);
+  transform: translateY(-5px);
 }
 
 @keyframes sweep {
@@ -237,8 +233,8 @@
 @media (max-width: 900px) {
   .container {
     padding: clamp(6rem, 10vw, 10rem) 15px;
-    h2 { font-size: clamp(3rem, 6.5vw, 4.2rem); }
   }
+  .container h2 { font-size: clamp(3rem, 6.5vw, 4.2rem); }
   .content { margin-top: clamp(4rem, 8vw, 6rem); }
   .card { min-height: auto; }
 }
@@ -269,7 +265,7 @@
   }
   
   .card {
-    min-height: clamp(40rem, 60vw, 50rem);
+    min-height: auto;
     border-radius: 2rem;
   }
   
@@ -278,6 +274,11 @@
   }
   
   .card .title p {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
+  }
+
+  .card .bot p {
+    min-height: auto;
+    margin-bottom: 2rem;
   }
 }

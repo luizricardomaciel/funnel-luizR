@@ -1,12 +1,36 @@
+.sectionSection {
+  position: relative;
+  overflow: hidden;
+  background: radial-gradient(circle at 100% 50%, rgba(255, 117, 9, 0.08), transparent 60%);
+}
+
+.sectionSection::before {
+  content: '';
+  position: absolute;
+  top: 10%;
+  right: -5%;
+  width: 50rem;
+  height: 50rem;
+  background: radial-gradient(circle, rgba(255, 0, 34, 0.1), transparent 70%);
+  filter: blur(80px);
+  z-index: -1;
+  animation: floatOrb 15s ease-in-out infinite alternate;
+}
+
+@keyframes floatOrb {
+  0% { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(-50px, 100px) scale(1.1); }
+}
+
 .container {
   width: 100%;
   max-width: 1246px;
-  padding: clamp(8rem, 12vw, 15rem) 20px;
+  padding: clamp(10rem, 15vw, 18rem) 20px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: clamp(4rem, 8vw, 8rem);
+  gap: clamp(4rem, 8vw, 10rem);
   position: relative;
 }
 
@@ -15,25 +39,42 @@
   max-width: 50rem;
   border-radius: clamp(2rem, 4vw, 4rem);
   overflow: hidden;
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.6);
   position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), transparent 50%, rgba(255, 117, 9, 0.1));
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+    z-index: 2;
+  }
 
   img {
     width: 100%;
     height: auto;
     display: block;
-    transition: transform 0.5s ease;
+    transition: transform 0.8s cubic-bezier(0.23, 1, 0.32, 1);
   }
 
   &::after {
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, rgba(0, 8, 22, 0.4), transparent);
+    background: linear-gradient(to top, rgba(0, 8, 22, 0.6), transparent 40%);
+    z-index: 1;
   }
 
   &:hover img {
-    transform: scale(1.05);
+    transform: scale(1.08) rotate(1deg);
   }
 }
 
@@ -64,6 +105,7 @@
 .info {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: clamp(2rem, 4vw, 3.2rem);
 
   p {
@@ -95,6 +137,7 @@
   }
   .left h1 { font-size: clamp(3.6rem, 7.5vw, 6.4rem); }
   .boxImage { max-width: 100%; }
+  .info { align-items: center; }
 }
 
 @media (max-width: 768px) {

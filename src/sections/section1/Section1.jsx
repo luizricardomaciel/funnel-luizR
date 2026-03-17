@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import style from "./SectionStyles.module.css";
 import AnimatedElement from "../AnimatedElement";
 import cell from "../../assets/celular-funnil 1.png";
-import TechnicalButton from "./TechnicalButton";
+import GlowButton from "../../components/GlowButton/GlowButton";
 
 function Section1() {
   const { t } = useTranslation();
@@ -23,9 +23,9 @@ function Section1() {
           <p>{t("section1.description")}</p>
           
           <div className={style.ctaWrapper}>
-            <TechnicalButton onClick={() => scrollToSection("section4")}>
+            <GlowButton onClick={() => scrollToSection("section4")}>
               {t("section1.button")}
-            </TechnicalButton>
+            </GlowButton>
           </div>
         </div>
         

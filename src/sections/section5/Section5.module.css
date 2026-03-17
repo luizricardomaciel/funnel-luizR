@@ -1,13 +1,20 @@
+.sectionSection {
+  position: relative;
+  overflow: hidden;
+  background: radial-gradient(circle at 100% 50%, rgba(255, 117, 9, 0.05), transparent 50%);
+}
+
 .container {
   width: 100%;
   max-width: 1246px;
   padding: 0 15px;
   margin: 0 auto;
   padding-top: clamp(10rem, 15vw, 180px);
-  padding-bottom: clamp(6rem, 10vw, 120px);
+  padding-bottom: clamp(10rem, 15vw, 180px);
   overflow-x: hidden;
+}
 
-  h2 {
+.container h2 {
     margin: 0 auto;
     text-align: center;
     font-size: clamp(3.6rem, 7.5vw, 5.6rem);
@@ -20,7 +27,6 @@
     display: table;
     line-height: 1.15;
     letter-spacing: -0.01em;
-  }
 }
 
 @keyframes shine {
@@ -41,8 +47,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
 
-  h3 {
+.box h3 {
     text-align: center;
     margin-top: clamp(1.6rem, 3vw, 2.4rem);
     font-size: clamp(2rem, 4.5vw, 2.4rem);
@@ -50,7 +57,6 @@
     font-family: 'Space Grotesk', sans-serif;
     max-width: 320px;
     line-height: 1.3;
-  }
 }
 
 /* 3D Tilt Effect Styles */
@@ -205,7 +211,7 @@
 .tr25:hover ~ .cardBody { transform: rotateX(-20deg) rotateY(20deg); }
 
 @media (max-width: 900px) {
-  .container { padding-top: clamp(6rem, 10vw, 100px); padding-bottom: clamp(4rem, 8vw, 60px); }
+  .container { padding-top: clamp(6rem, 10vw, 100px); padding-bottom: clamp(10rem, 15vw, 180px); }
   .content { margin-top: clamp(4rem, 8vw, 6rem); gap: 3rem 2.4rem; }
   .cardContainer { width: clamp(240px, 65vw, 260px); height: clamp(260px, 70vw, 280px); }
   .box h3 { font-size: clamp(1.8rem, 4vw, 2rem); }
@@ -227,7 +233,7 @@
 @media (max-width: 480px) {
   .container {
     padding-top: clamp(4rem, 8vw, 80px);
-    padding-bottom: clamp(3rem, 6vw, 50px);
+    padding-bottom: clamp(10rem, 15vw, 180px);
   }
   
   .container h2 {
