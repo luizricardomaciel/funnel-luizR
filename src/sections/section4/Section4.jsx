@@ -11,17 +11,29 @@ function Section4() {
   const { t } = useTranslation();
   const [openForm, setForm] = useState(false);
 
+  const handleMouseMove = (e) => {
+    const card = e.currentTarget;
+    const rect = card.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    card.style.setProperty("--mouse-x", `${x}px`);
+    card.style.setProperty("--mouse-y", `${y}px`);
+  };
+
   const plans = ["maintenance", "pro", "institutional"];
 
   return (
     <section id="section4" className={styles.sectionSection}>
       <AnimatedElement />
       <div className={styles.container}>
-        <h2 data-aos="fade-left">{t("section4.title")}</h2>
+        <h2 className="text-shine" data-aos="fade-up">{t("section4.title")}</h2>
         <div className={styles.content}>
           {plans.map((id, index) => (
             <div key={id} className={styles.animate} data-aos="fade-up" data-aos-delay={index * 100}>
-              <div className={`${styles.card} ${id === 'pro' ? styles.proCard : ''}`}>
+              <div 
+                className={`${styles.card} ${id === 'pro' ? styles.proCard : ''}`}
+                onMouseMove={handleMouseMove}
+              >
                 <div className={`${styles.title} ${id === 'pro' ? styles.titleClick : ''}`}>
                   <p>{t(`section4.plans.${id}.name`)}</p>
                 </div>
@@ -31,7 +43,7 @@ function Section4() {
                     <h3>{t(`section4.plans.${id}.price`)}</h3>
                     <p>{t(`section4.plans.${id}.cash`)}</p>
                   </div>
-                  <div style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
+                  <div style={{ display: 'flex', justifyContent: 'center', width: '100%', marginTop: 'auto' }}>
                     {id === 'pro' ? (
                       <GlowButton onClick={() => setForm(true)}>
                         {t(`section4.plans.${id}.button`)}

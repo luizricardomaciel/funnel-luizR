@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import styles from "./SectionStyles.module.css";
 
 const TechnicalButton = ({ children, onClick, href, className = "" }) => {
@@ -7,11 +8,6 @@ const TechnicalButton = ({ children, onClick, href, className = "" }) => {
       <div className={`${styles.circle} ${styles.circle1}`}></div>
       <div className={`${styles.circle} ${styles.circle2}`}></div>
       <div className={`${styles.circle} ${styles.circle3}`}></div>
-      <div className={`${styles.circle} ${styles.circle4}`}></div>
-      <div className={`${styles.circle} ${styles.circle5}`}></div>
-      <div className={`${styles.circle} ${styles.circle6}`}></div>
-      <div className={`${styles.circle} ${styles.circle7}`}></div>
-      <div className={`${styles.circle} ${styles.circle8}`}></div>
     </div>
   );
 
@@ -28,6 +24,13 @@ const TechnicalButton = ({ children, onClick, href, className = "" }) => {
       {content}
     </button>
   );
+};
+
+TechnicalButton.propTypes = {
+  children: PropTypes.node.isRequired,
+  onClick: PropTypes.func,
+  href: PropTypes.string,
+  className: PropTypes.string,
 };
 
 export default TechnicalButton;
