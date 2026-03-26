@@ -19,7 +19,7 @@
   border-radius: 1.4rem;
   min-width: 18rem;
   padding: 1.6rem 3.2rem;
-  background: #020c1d;
+  background: #151532;
   display: flex;
   color: #fff;
   font-weight: 700;
@@ -43,14 +43,12 @@
   position: absolute;
   inset: -100%;
   aspect-ratio: 1;
-  background: conic-gradient(
-    from 0deg,
-    transparent 0deg,
-    #ff0022 90deg,
-    #ff7509 180deg,
-    #ffbd09 270deg,
-    transparent 360deg
-  );
+  background: conic-gradient(from 0deg,
+      transparent 0deg,
+      #7C3AED 90deg,
+      #F43F5E 180deg,
+      #A78BFA 270deg,
+      transparent 360deg);
   animation: rotate 4s linear infinite;
   animation-play-state: paused;
   opacity: 0;
@@ -59,19 +57,24 @@
   will-change: transform;
 }
 
-.realButton:hover ~ .buttonBorder .spin {
+.realButton:hover~.buttonBorder .spin {
   animation-play-state: running;
   opacity: 1;
 }
 
-.realButton:active ~ .buttonBorder .button {
+.realButton:active~.buttonBorder .button {
   transform: scale(0.96);
-  background: #03142d;
+  background: #1b1b3e;
 }
 
 @keyframes rotate {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* Glow Shadow Effect */
@@ -86,7 +89,7 @@
   z-index: -1;
 }
 
-.realButton:hover ~ .buttonContainer::after {
+.realButton:hover~.buttonContainer::after {
   opacity: 0.4;
 }
 
@@ -96,4 +99,3 @@
     padding: 1.4rem 2.4rem;
   }
 }
-
